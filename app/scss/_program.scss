@@ -1,0 +1,39 @@
+.program {
+  table {
+    width: 100%;
+    text-align: left;
+
+    th {
+      border-bottom: 4px solid $border-color;
+      border-right: 2px solid $border-color;
+      padding: 10px;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      h4 {
+        margin: 0;
+      }
+    }
+
+    td {
+      border-bottom: 2px solid $border-color;
+      border-right: 2px solid $border-color;
+      padding: 10px;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &.exercises {
+        padding: 0;
+      }
+
+      a {
+        display: block;
+        padding: 15px;
+      }
+    }
+  }
+}
