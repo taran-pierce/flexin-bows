@@ -18,20 +18,9 @@ img {
   padding-right: 15px;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  .item {
-    align-self: flex-start;
-    flex-grow: 1;
-    width: 50%;
-
-    img {
-      border: 5px solid $border-color;
-    }
-  }
+section {
+  padding: 20px 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {

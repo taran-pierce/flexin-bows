@@ -42,7 +42,7 @@
               <tr>
                 <td>Shoulders</td>
                 <td class="exercises">
-                  <a href="#" data-exercise="decline-bench-press">Crossover Seated Rear Deltoid</a>
+                  <a href="#" data-exercise="cross-over-rear-deltiod">Crossover Seated Rear Deltoid</a>
                 </td>
                 <td>1-2</td>
                 <td>10-15</td>
@@ -50,8 +50,8 @@
               <tr>
                 <td>Arms</td>
                 <td class="exercises">
-                  <a href="#" data-exercise="decline-bench-press">Standing Biceps Curl</a>
-                  <a href="#" data-exercise="decline-bench-press">Triceps Pushdown</a>
+                  <a href="#" data-exercise="bicep-curl">Standing Biceps Curl</a>
+                  <a href="#" data-exercise="triceps-pushdown">Triceps Pushdown</a>
                 </td>
                 <td>1-2</td>
                 <td>10-15</td>
@@ -59,8 +59,8 @@
               <tr>
                 <td>Legs</td>
                 <td class="exercises">
-                  <a href="#" data-exercise="decline-bench-press">Calf Raise</a>
-                  <a href="#" data-exercise="decline-bench-press">Truck Rotation</a>
+                  <a href="#" data-exercise="calf-raise">Calf Raise</a>
+                  <a href="#" data-exercise="trunk-rotation">Truck Rotation</a>
                 </td>
                 <td>1-2</td>
                 <td>10-15</td>
@@ -68,7 +68,7 @@
               <tr>
                 <td>Trunk</td>
                 <td class="exercises">
-                  <a href="#" data-exercise="decline-bench-press">Seated Abdominal Crunch</a>
+                  <a href="#" data-exercise="abdominal-crunch">Seated Abdominal Crunch</a>
                 </td>
                 <td>1-2</td>
                 <td>10-15</td>

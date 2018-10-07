@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  mobileNavToggle();
   initExerciseProgram();
 });
 
@@ -108,4 +109,18 @@ function initExerciseProgram () {
   var targets = getTargets();
   
   bindOnClick( targets );
+}
+
+function  mobileNavToggle () {
+  var navButton = document.getElementById('main-nav-toggle');
+  var navMenu = document.getElementById('main-nav');
+  var windowWidth;
+  
+  navButton.addEventListener('click', function() {
+    windowWidth = window.innerWidth;
+    
+    if ( windowWidth < 992) {
+      navMenu.classList.toggle('open');
+    }
+  });
 }

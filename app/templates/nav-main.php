@@ -4,9 +4,15 @@
 ?>
 <header>
   <nav>
-    <ul>
-      <li>
-        <a href="#" class="logo">Test</a>
+    <button id="main-nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-logo">Flexin Bows with Terry</div>
+    <ul id="main-nav">
+      <li class="logo">
+        <a href="/index.php">Flexin Bows with Terry</a>
       </li>
       <li>
         <a href="#">Program</a>

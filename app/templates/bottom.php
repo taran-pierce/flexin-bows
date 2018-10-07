@@ -1,4 +1,6 @@
-    <?php include 'footer.php' ?>
+    <?php
+      #include 'footer.php'
+    ?>
 
     <!-- build:js js/bootstrap-bundle.js -->
     <script type="text/javascript" src="../node_modules/lazysizes/lazysizes.js"></script>

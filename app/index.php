@@ -6,11 +6,10 @@
 ?>
 <section>
   <div class="container">
-    <h1>Flexin Bows with Terry</h1>
     <div class="program">
+      <h1>20 Minute Better Body Workout</h1>
       <div class="flex program">
-        <div class="item">
-          <h2>20 Minute Better Body Workout</h2>
+        <div class="item content">
           <p><strong>Frequency:</strong> 3 days per week (M-W-F)</p>
           <p><strong>Time:</strong> 20 Minutes</p>
           <p>Insert big paragraph of shit I probably won't transcribe. Just work out.</p>
@@ -76,12 +75,12 @@
             </tbody>
           </table>
         </div>
-        <div class="item">
+        <div class="item image">
           <picture class="workout-image">
             <source srcset="images/exercises/edited/decline-bench-press.jpg" media="(min-width: 1200px)" />
             <source srcset="images/exercises/edited/decline-bench-press-md.jpg" media="(min-width: 992px)" />
 
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="images/exercises/edited/decline-bench-press-sm.jpg"
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="images/exercises/edited/decline-bench-press.jpg"
                  class="lazyload"
                  alt="decline bench press" />
           </picture>
