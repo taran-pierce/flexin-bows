@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Jump Start</title>
-    <meta name="description" content="Jump Start">
+    <title>Flexin Bows</title>
+    <meta name="description" content="Flexin Bows with Terry">
     <meta name="author" content="Taran Pierce">
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
     <link rel="stylesheet" href="css/base.css">
