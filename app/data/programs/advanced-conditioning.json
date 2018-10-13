@@ -1,0 +1,126 @@
+{
+  "title" : "Advanced General Conditioning",
+  "frequency" : "4 days per week (M-T-Th-F)",
+  "time" : "20 Minutes",
+  "content" : "some bull shit here. Just work out!",
+  "plan" : [
+    {
+      "days" : "1 & 3",
+      "program" : [
+        {
+          "bodyPart" : "Chest",
+          "exercises" : [
+            {
+              "name" : "Bench Press",
+              "fileName" : "bench-press"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Shoulders",
+          "exercises" : [
+            {
+              "name" : "Seated Shoulder Press",
+              "fileName" : "seated-shoulder-press"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Arms",
+          "exercises" : [
+            {
+              "name" : "Standing Biceps Curl",
+              "fileName" : "bicep-curl"
+            },
+            {
+              "name" : "Triceps Pushdown",
+              "fileName" : "triceps-pushdown"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Legs",
+          "exercises" : [
+            {
+              "name" : "Calf Raise",
+              "fileName" : "calf-raise"
+            },
+            {
+              "name" : "Leg Extension",
+              "fileName" : "leg-extension"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        }
+      ]
+    },
+    {
+      "days" : "2 & 4",
+      "program" : [
+        {
+          "bodyPart" : "Back",
+          "exercises" : [
+            {
+              "name" : "Seated Lat Rows",
+              "fileName" : "seated-lat-rows"
+            },
+            {
+              "name" : "Stiff Arm Pulldowns",
+              "fileName" : "stiff-arm-pulldowns"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Shoulders",
+          "exercises" : [
+            {
+              "name" : "Crossover Seated Rear Deltoid Row",
+              "fileName" : "crossover-seated-rear-deltoid-row"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Arms",
+          "exercises" : [
+            {
+              "name" : "Standing Biceps Curl",
+              "fileName" : "bicep-curl"
+            },
+            {
+              "name" : "Triceps Pushdown",
+              "fileName" : "triceps-pushdown"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        },
+        {
+          "bodyPart" : "Trunk",
+          "exercises" : [
+            {
+              "name" : "Seated Abdominal Crunch",
+              "fileName" : "abdominal-crunch"
+            },
+            {
+              "name" : "Trunk Rotation",
+              "fileName" : "trunk-rotation"
+            }
+          ],
+          "sets" : "1-3",
+          "reps" : "10-12"
+        }
+      ]
+    }
+  ]
+}
