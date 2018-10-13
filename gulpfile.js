@@ -18,7 +18,7 @@ var runSequence = require('run-sequence');
 //    .pipe(gulp.dest('destination')) // Outputs the file in the destination folder
 //})
 
-// compile sass to css
+// compile sass to css and move to /app/css
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
@@ -27,6 +27,21 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+// compile scss to css and move to /dist
+gulp.task('css', function() {
+  return gulp.src('app/scss/**/*.scss')
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'))
+});
+
+// TODO should minify as well
+// move js to /dist
+gulp.task('js', function() {
+  return gulp.src('app/js/**/*.js')
+    .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('php', function() {
@@ -72,24 +87,51 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/images'))
 });
 
-// move fonts
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-})
-
+// optimze images for prod
+gulp.task('prod-images', function() {
+  return gulp.src('app/images/**/*.+(png|jpg|jpg|gif|svg)')
+    .pipe( cache( imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 8 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]}
+      )
+    ]) ) )
+    .pipe(gulp.dest('dist/images'))
+});
 
 // clean dist directory
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
 
+// copy files
+gulp.task('copy', function() {
+  return gulp.src('app/**/*.+(png|xml|gif|ico|json|.htaccess)')
+    .pipe(gulp.dest('dist/'))
+})
+
 // build project
 gulp.task('build', function(callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'images'],
     callback
   )
+});
+
+// build project for production
+gulp.task('prod', function() {
+  runSequence('clean:dist', [
+    'css',
+    'js',
+    'useref',
+    'prod-images',
+    'copy'
+  ])
 });
 
 // default task for easy start
