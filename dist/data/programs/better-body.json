@@ -1,0 +1,76 @@
+[
+  {
+    "bodyPart" : "Chest",
+    "exercises" : [
+      {
+        "name" : "Decline Bench Press",
+        "fileName" : "decline-bench-press"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  },
+  {
+    "bodyPart" : "Back",
+    "exercises" : [
+      {
+        "name" : "Seated Lat Rows",
+        "fileName" : "shoulder-extension"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  },
+  {
+    "bodyPart" : "Shoulders",
+    "exercises" : [
+      {
+        "name" : "Crossover Seated Rear Deltoid",
+        "fileName" : "cross-over-rear-deltiod"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  },
+  {
+    "bodyPart" : "Arms",
+    "exercises" : [
+      {
+        "name" : "Standing Biceps Curl",
+        "fileName" : "bicep-curl"
+      },
+      {
+        "name" : "Triceps Pushdown",
+        "fileName" : "triceps-pushdown"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  },
+  {
+    "bodyPart" : "Legs",
+    "exercises" : [
+      {
+        "name" : "Calf Raise",
+        "fileName" : "calf-raise"
+      },
+      {
+        "name" : "Trunk Rotation",
+        "fileName" : "trunk-rotation"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  },
+  {
+    "bodyPart" : "Trunk",
+    "exercises" : [
+      {
+        "name" : "Seated Abdominal Crunch",
+        "fileName" : "abdominal-crunch"
+      }
+    ],
+    "sets" : "1-2",
+    "reps" : "10-15"
+  }
+]
