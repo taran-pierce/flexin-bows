@@ -59,7 +59,9 @@ function bindOnClick ( targets ) {
   for (var i = 0; i < targets.length; i++) {
     var target = targets[i];
     
-    target.addEventListener('click', function() {
+    target.addEventListener('click', function(e) {
+      e.preventDefault();
+      
       var data = {
         currentImageData : getImageInfo(imageTarget),
         targetData : getTargetInfo(this)

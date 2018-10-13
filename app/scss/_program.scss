@@ -98,6 +98,20 @@
         }
       }
     }
+
+    table {
+      th {
+        &:first-child {
+          display: table-cell;
+        }
+      }
+
+      td {
+        &:first-child {
+          display: table-cell;
+        }
+      }
+    }
   }
 }
 
