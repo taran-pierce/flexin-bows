@@ -20,13 +20,42 @@
       &.content {
         margin-top: 15px;
         order: 1;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+
+          li {
+            flex-grow: 1;
+            text-align: center;
+            width: 50%;
+
+            a {
+              display: block;
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .sub-nav {
+      li {
+        &.active {
+          background: rgba(255,255,255,.8);
+        }
       }
     }
   }
 
   table {
+    display: none;
     width: 100%;
     text-align: left;
+
+    &.active {
+      display: block;
+    }
 
     th {
       border-bottom: 4px solid $border-color;

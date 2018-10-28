@@ -1,5 +1,5 @@
 {
-  "title" : "True Aerobic Circuit Training",
+  "title" : "Body Building",
   "frequency" : "3 days per week (M-W-F)",
   "time" : "20 Minutes",
   "content" : "some bull shit here. Just work out!",
@@ -23,7 +23,7 @@
           "exercises" : [
             {
               "name" : "Seated Lat Rows",
-              "fileName" : "should-extension"
+              "fileName" : "shoulder-extension"
             }
           ],
           "sets" : "1-2",

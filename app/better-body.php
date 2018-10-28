@@ -1,6 +1,6 @@
 <?php
   # Page Vars
-  $active_link = "/";
+  $active_link = "/better-body.php";
 
   include "templates/top.php";
 ?>

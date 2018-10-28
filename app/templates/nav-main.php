@@ -15,7 +15,31 @@
         <a href="/index.php">Flexin Bows with Terry</a>
       </li>
       <li>
-        <a href="#">Program</a>
+        <a href="#" class="dropdown">Programs</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/better-body.php">Better Body</a>
+          </li>
+          <li>
+            <a href="/advanced-conditioning.php">Advanced Conditioning</a>
+          </li>
+          <li>
+            <a href="/body-building.php">Body Building</a>
+          </li>
+          <li>
+            <a href="/strength-training.php">Strength Training</a>
+          </li>
+          <li>
+            <a href="/aerobic.php">Aerobic</a>
+          </li>
+          <li>
+            <a href="/upper-lower-body.php">Upper Lower Body</a>
+          </li>
+          <li>
+            <a href="/anaerobic.php">Anaerobic</a>
+          </li>
+
+        </ul>
       </li>
       <li>
         <a href="#">Exercise</a>

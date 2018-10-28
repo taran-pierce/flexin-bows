@@ -8,7 +8,7 @@
   <div class="container">
     <?php
       # component vars
-      $file = 'data/programs/better-body-refactor.json';
+      $file = 'data/programs/body-building.json';
       $starting_exercise = "decline-bench-press";
 
       include "components/program-table2.php";

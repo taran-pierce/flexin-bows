@@ -8,13 +8,10 @@
   <div class="container">
     <?php
       # component vars
-      $title = "20 Minute Better Body Workout";
-      $frequency = "3 days per week (M-W-F)";
-      $time = "20 Minutes";
-      $instructions = "Insert big paragraph of shit I probably won't transcribe. Just work out.";
+      $file = 'data/programs/better-body-refactor.json';
       $starting_exercise = "decline-bench-press";
 
-      include "components/program-table.php";
+      include "components/program-table2.php";
     ?>
   </div>
 </section>

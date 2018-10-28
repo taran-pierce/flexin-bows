@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   mobileNavToggle();
   initExerciseProgram();
+  initProgramTable();
+  subNavToggle();
 });
 
 function changeImage ( target, data ) {
@@ -47,28 +49,37 @@ function splitPath (path, imageNameTest) {
 }
 
 function getTargets () {
-  var table = document.getElementById('main-table'),
-      targets = table.getElementsByTagName('a');
+  var tables = document.getElementsByTagName('table'),
+      targets = [];
+  
+  for (var i = 0; i < tables.length; i++) {
+    targets.push(tables[i].getElementsByTagName('a'));
+  }
   
   return targets;
 }
 
-function bindOnClick ( targets ) {
+function bindOnClick ( tables ) {
   var imageTarget = document.getElementsByClassName('workout-image')[0];
   
-  for (var i = 0; i < targets.length; i++) {
-    var target = targets[i];
+  for (var i = 0; i < tables.length; i++) {
+    var links = tables[i];
     
-    target.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      var data = {
-        currentImageData : getImageInfo(imageTarget),
-        targetData : getTargetInfo(this)
+      for (var i2 = 0; i2 < links.length; i2++) {
+  
+        links[i2].addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          
+          var data = {
+            currentImageData : getImageInfo(imageTarget),
+            targetData : getTargetInfo(this)
+          };
+          
+          changeImage( imageTarget, data );
+        });
       };
       
-      changeImage( imageTarget, data );
-    });
   }
 }
 
@@ -125,4 +136,44 @@ function  mobileNavToggle () {
       navMenu.classList.toggle('open');
     }
   });
+}
+
+function programBindOnClick () {
+  var programNav = document.getElementById('program-nav');
+  var links = programNav.getElementsByTagName('a');
+  
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = this.hash.split('#')[1];
+      var table = document.getElementById(target);
+      
+      programNav.getElementsByClassName('active')[0].classList.toggle('active');
+      
+      this.parentElement.classList.toggle('active');
+      
+      document.getElementsByClassName('exercises active')[0].classList.toggle('active');
+      
+      table.classList.toggle('active');
+    });
+  }
+}
+
+function initProgramTable () {
+  programBindOnClick();
+}
+
+function subNavToggle() {
+  var dropdownButtons = document.getElementsByClassName('dropdown');
+  
+  //console.log(dropdownButtons);
+  
+  for (var i = 0; i < dropdownButtons.length; i++) {
+    dropdownButtons[i].addEventListener('click', function(){
+      console.log('oh hai');
+      var menu = this.nextElementSibling;
+      console.log(menu);
+      menu.classList.toggle('open');
+    });
+  }
 }

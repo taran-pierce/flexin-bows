@@ -1,12 +1,18 @@
 <?php
   # Page Vars
-  $active_link = 'test';
+  $active_link = "/";
+
+  include "templates/top.php";
 ?>
-<?php include 'templates/top.php' ?>
 <section>
   <div class="container">
-    <h1>Test</h1>
-    <p>Testing a few things out here.</p>
+    <?php
+      # component vars
+      $file = 'data/programs/advanced-conditioning.json';
+      $starting_exercise = "decline-bench-press";
+
+      include "components/program-table2.php";
+    ?>
   </div>
 </section>
-<?php include 'templates/bottom.php' ?>
+<?php include "templates/bottom.php" ?>
