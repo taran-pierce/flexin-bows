@@ -1,0 +1,12 @@
+$image-base:              '../images/';
+$border-color:            #7c6f5e;
+
+$font-family-sans-serif:  'Fahkwang', "Helvetica Neue", sans-serif;
+$font-family-base:        $font-family-sans-serif;
+$font-size-base:          16px;
+$font-size-h1:            floor(($font-size-base * 2.4));
+$font-size-h2:            floor(($font-size-base * 2.15));
+$font-size-h3:            ceil(($font-size-base * 1.7));
+$font-size-h4:            ceil(($font-size-base * 1.25));
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85));

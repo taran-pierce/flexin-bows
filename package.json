@@ -1,36 +1,28 @@
 {
   "name": "flexin-bows",
-  "version": "1.0.0",
-  "description": "Flexin bows with Terry",
-  "main": "app/index.php",
+  "version": "2.0.0",
+  "description": "The booklet sucks, look through this instead to get your work out on.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taran-pierce/flexin-bows.git"
   },
-  "author": "Taran Pierce",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/taran-pierce/flexin-bows/issues"
   },
-  "homepage": "https://github.com/taran-pierce/flexin-bows#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-cache": "^0.4.6",
-    "gulp-connect-php": "^1.0.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "run-sequence": "^2.2.1"
-  },
-  "dependencies": {
-    "gulp-load-plugins": "^1.5.0"
-  }
+  "homepage": "https://github.com/taran-pierce/flexin-bows#readme"
 }
