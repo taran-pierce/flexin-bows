@@ -36,14 +36,30 @@ const Layout = ( props) => {
   
   if (props.data) {
     return (
-      <div>
+      <div className={`main-layout`}>
+        <style jsx global>{`
+          body {
+            background: url('/static/images/body-bg.png') top left repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+          }
+        `}</style>
         <Header links={links} />
         <Workout data={props.data} />
       </div>
     )
   } else {
     return (
-      <div>
+      <div className={`main-layout`}>
+        <style jsx global>{`
+          body {
+            background: url('/static/images/body-bg.png') top left repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+          }
+        `}</style>
         <Header links={links} />
         <WorkoutList links={links} />
       </div>

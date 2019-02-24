@@ -12,28 +12,39 @@ const Header = (props) => {
       <nav>
         <style jsx>{`
           ul {
+            background-color: rgba(0,0,0,.3);
+            border-bottom: 1px solid rgba(0,0,0,.4);
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-evenly;
           }
           
           li {
             grow: 1;
-            text-align: center;
+            padding: .5rem 1rem;
+            width: 50%;
+          }
+          
+          .search-box {
+            text-align: right;
           }
         `}</style>
         <ul>
-          {props.links.map( (link) => (
-            <li>
-              <Link href={link.href}>
-                <a>{link.name}</a>
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link href={`/`}>
+              <a>Flexin Bows with Terry</a>
+            </Link>
+          </li>
+          <li className={`search-box`}>
+            <form>
+              <label>Search:
+                <input type={`text`} value={``} />
+              </label>
+            </form>
+          </li>
         </ul>
       </nav>
     </header>

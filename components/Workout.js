@@ -2,21 +2,27 @@ import WorkoutTable from './WorkoutTable'
 
 const Workout = (props) => {
   const data = props.data
-  
-  console.log(`here is data: `, data)
-  
   const plans = props.data.workout
   
-  console.log(`plans ${plans}`)
-  
   return (
-    <section>
+    <section className={`workout`}>
+      <style jsx>{`
+        h1 {
+          background-color: #7c6f5e;
+          margin: 0;
+          color: #dfd2c8;
+          text-shadow: -1px -1px rgba(0,0,0,.3);
+          padding: .5rem;
+        }
+        
+        .workout {
+          padding: 1rem;
+        }
+      `}</style>
       <h1>{data.title}</h1>
-      <ul>
-        <li>{data.content}</li>
-        <li>{data.time}</li>
-        <li>{data.frequency}</li>
-      </ul>
+      <p>{data.content}</p>
+      <p><strong>Frequency: </strong>{data.frequency}</p>
+      <p><strong>Time: </strong>{data.time}</p>
       <WorkoutTable plans={plans} />
     </section>
   )
