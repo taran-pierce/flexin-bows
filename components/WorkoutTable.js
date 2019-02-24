@@ -34,8 +34,10 @@ const WorkoutTable = (props) => {
           border-bottom: none;
         }
       `}</style>
-      <table>
-        <thead>
+      
+      {days.map( (day) => (
+        <table>
+          <thead>
           <tr>
             <th>Body Part</th>
             <th>Exercise</th>
@@ -43,9 +45,8 @@ const WorkoutTable = (props) => {
             <th>Reps</th>
           </tr>
         </thead>
-        <tbody>
-          {days.map( (day) => (
-            day.bodyParts.map( (part) => (
+          <tbody>
+            {day.bodyParts.map( (part) => (
               <tr>
                 <td>{part.name}</td>
                 <td>
@@ -60,10 +61,10 @@ const WorkoutTable = (props) => {
                 <td>{part.sets}</td>
                 <td>{part.reps}</td>
               </tr>
-            ))
-          ))}
-        </tbody>
-      </table>
+            ))}
+          </tbody>
+        </table>
+      ))}
     </div>
   )
 }
