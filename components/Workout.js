@@ -3,7 +3,9 @@ import WorkoutTable from './WorkoutTable'
 const Workout = (props) => {
   const data = props.data
   
-  const plans = props.data.plan
+  console.log(`here is data: `, data)
+  
+  const plans = props.data.workout
   
   console.log(`plans ${plans}`)
   
