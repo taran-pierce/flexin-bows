@@ -30,7 +30,7 @@ const WorkoutTableHeader = (props) => {
       `}</style>
       <ul>
         {props.days.map( (day) => (
-          <li>
+          <li key={day.title}>
             <Link href={`#`}>
               <a>{day.title}</a>
             </Link>

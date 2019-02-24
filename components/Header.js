@@ -41,7 +41,10 @@ const Header = (props) => {
           <li className={`search-box`}>
             <form>
               <label>Search:
-                <input type={`text`} value={``} />
+                <input
+                  type={`text`}
+                  onChange={props.onChange}
+                />
               </label>
             </form>
           </li>

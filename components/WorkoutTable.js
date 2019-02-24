@@ -36,7 +36,7 @@ const WorkoutTable = (props) => {
       `}</style>
       
       {days.map( (day) => (
-        <table>
+        <table key={day.title}>
           <thead>
           <tr>
             <th>Body Part</th>
@@ -47,11 +47,11 @@ const WorkoutTable = (props) => {
         </thead>
           <tbody>
             {day.bodyParts.map( (part) => (
-              <tr>
+              <tr key={part.name}>
                 <td>{part.name}</td>
                 <td>
                   {part.exercises.map( (workout) => (
-                    <p>
+                    <p key={workout.name}>
                       <Link href={`#`}>
                         <a>{workout.name}</a>
                       </Link>

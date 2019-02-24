@@ -45,7 +45,7 @@ const Layout = ( props) => {
             font-family: Helvetica, sans-serif;
           }
         `}</style>
-        <Header links={links} />
+        <Header links={links} onChange={props.onChange} searchValue={props.searchvalue} />
         <Workout data={props.data} />
       </div>
     )
