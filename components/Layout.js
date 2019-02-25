@@ -46,7 +46,11 @@ const Layout = ( props) => {
           }
         `}</style>
         <Header links={links} onChange={props.onChange} searchValue={props.searchvalue} />
-        <Workout data={props.data} />
+        <Workout
+          data={props.data}
+          activeTab={props.activeTab}
+          onWorkoutClick={props.onWorkoutClick}
+        />
       </div>
     )
   } else {

@@ -1,4 +1,4 @@
-import WorkoutTable from './WorkoutTable'
+import WorkoutTable2 from './WorkoutTable2'
 
 const Workout = (props) => {
   const data = props.data
@@ -23,7 +23,7 @@ const Workout = (props) => {
       <p>{data.content}</p>
       <p><strong>Frequency: </strong>{data.frequency}</p>
       <p><strong>Time: </strong>{data.time}</p>
-      <WorkoutTable plans={plans} />
+      <WorkoutTable2 plans={plans} activeTab={props.activeTab} onWorkoutClick={props.onWorkoutClick} />
     </section>
   )
 }

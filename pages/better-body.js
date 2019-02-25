@@ -3,17 +3,15 @@ import Layout from "../components/Layout"
 import data from '../data/programs/better-body.json'
 
 class Page extends React.Component {
-  static async getInitialProps() {
-    const pageProps = 'testing pageProps'
-    
+  constructor(props) {
+    super(props)
+  
+    // TODO how do I get this first activeTab by default
     this.state = {
-      activeTab: 1
+      activeTab: 'body-building-1-3'
     }
-    
-    return {
-      pageProps,
-      activeTab: this.state.activeTab
-    }
+  
+    this.onWorkoutClick = this.onWorkoutClick.bind(this)
   }
   
   onChange(event) {
@@ -21,12 +19,26 @@ class Page extends React.Component {
     console.log('oh hai, stop')
   }
   
+  
+  changeTab(id) {
+    console.log('changeTab ran')
+    this.setState({ activeTab: id })
+  }
+  
+  onWorkoutClick(event) {
+    event.preventDefault()
+    console.log('oh hai workout click, stop it', event.target.dataset.id)
+    console.log(this)
+    this.setState({ activeTab: event.target.dataset.id })
+  }
+  
   render() {
     return (
       <Layout
         data={data}
-        activeTab={this.props.activeTab}
+        activeTab={this.state.activeTab}
         onChange={this.onChange}
+        onWorkoutClick={this.onWorkoutClick}
       />
     )
   }

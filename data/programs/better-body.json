@@ -7,6 +7,7 @@
     "days": [
       {
         "title": "1 & 3",
+        "id": "body-building-1-3",
         "bodyParts": [
           {
             "name": "Chest",
@@ -50,6 +51,7 @@
       },
       {
         "title": "2 & 4",
+        "id": "body-building-2-4",
         "bodyParts": [
           {
             "name": "Back",
@@ -93,6 +95,7 @@
       },
       {
         "title": "5 & 7",
+        "id": "body-building-5-7",
         "bodyParts": [
           {
             "name" : "Legs",

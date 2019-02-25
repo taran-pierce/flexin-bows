@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 const WorkoutTable = (props) => {
   const days = props.plans.days
+  let count = 1
   
   return (
     <div className={`workout-table`}>
@@ -34,7 +35,6 @@ const WorkoutTable = (props) => {
           border-bottom: none;
         }
       `}</style>
-      
       {days.map( (day) => (
         <table key={day.title}>
           <thead>
