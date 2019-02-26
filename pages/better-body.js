@@ -8,7 +8,7 @@ class Page extends React.Component {
   
     // TODO how do I get this first activeTab by default
     this.state = {
-      activeTab: 'body-building-1-3'
+      activeTab: 'better-body-1-3'
     }
   
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
@@ -19,7 +19,6 @@ class Page extends React.Component {
     console.log('oh hai, stop')
   }
   
-  
   changeTab(id) {
     console.log('changeTab ran')
     this.setState({ activeTab: id })
@@ -27,9 +26,9 @@ class Page extends React.Component {
   
   onWorkoutClick(event) {
     event.preventDefault()
-    console.log('oh hai workout click, stop it', event.target.dataset.id)
-    console.log(this)
-    this.setState({ activeTab: event.target.dataset.id })
+    const id = event.target.dataset.id
+    
+    this.setState({ activeTab: id })
   }
   
   render() {

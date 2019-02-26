@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from "../components/Layout";
-import data from '../data/programs/body-building.json'
+import data from '../data/programs/advanced-conditioning.json'
 
 class Page extends React.Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      activeTab: 'body-building-1-3',
+      activeTab: 'advanced-conditioning-1-3',
       value: ''
     }
     
