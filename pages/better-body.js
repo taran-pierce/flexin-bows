@@ -8,10 +8,14 @@ class Page extends React.Component {
   
     // TODO how do I get this first activeTab by default
     this.state = {
-      activeTab: 'better-body-1-3'
+      activeTab: 'better-body-1-3',
+      image: '/static/images/exercises/edited/decline-bench-press.jpg',
+      value: ''
     }
   
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
+    this.onBodyPartClick = this.onBodyPartClick.bind(this)
+    this.onChange = this.onChange.bind(this)
   }
   
   onChange(event) {
@@ -19,9 +23,11 @@ class Page extends React.Component {
     console.log('oh hai, stop')
   }
   
-  changeTab(id) {
-    console.log('changeTab ran')
-    this.setState({ activeTab: id })
+  onBodyPartClick(event) {
+    event.preventDefault()
+    const fileName = `/static/images/exercises/edited/${event.target.dataset.file}.jpg`
+    
+    this.setState({ image: fileName })
   }
   
   onWorkoutClick(event) {
@@ -38,6 +44,8 @@ class Page extends React.Component {
         activeTab={this.state.activeTab}
         onChange={this.onChange}
         onWorkoutClick={this.onWorkoutClick}
+        onBodyPartClick={this.onBodyPartClick}
+        image={this.state.image}
       />
     )
   }

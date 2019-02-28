@@ -8,11 +8,13 @@ class Page extends React.Component {
     
     this.state = {
       activeTab: 'upper-lower-body-1-3',
+      image: '/static/images/exercises/edited/decline-bench-press.jpg',
       value: ''
     }
     
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
     this.onChange = this.onChange.bind(this)
+    this.onBodyPartClick = this.onBodyPartClick.bind(this)
   }
   
   onWorkoutClick(event) {
@@ -20,6 +22,13 @@ class Page extends React.Component {
     const id = event.target.dataset.id
     
     this.setState({ activeTab: id })
+  }
+  
+  onBodyPartClick(event) {
+    event.preventDefault()
+    const fileName = `/static/images/exercises/edited/${event.target.dataset.file}.jpg`
+    
+    this.setState({ image: fileName })
   }
   
   onChange(event) {
@@ -34,6 +43,8 @@ class Page extends React.Component {
         activeTab={this.state.activeTab}
         onChange={this.onChange}
         onWorkoutClick={this.onWorkoutClick}
+        onBodyPartClick={this.onBodyPartClick}
+        image={this.state.image}
       />
     )
   }
