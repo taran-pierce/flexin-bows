@@ -7,7 +7,7 @@ class Page extends React.Component {
     super(props)
     
     this.state = {
-      activeTab: 'anaerobic-1-3',
+      activeTab: 'strength-training-1-3',
       value: ''
     }
     
