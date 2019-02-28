@@ -3,9 +3,6 @@ import Table from './Table'
 import Link from 'next/link'
 
 const WorkoutTable2 = (props) => {
-  console.log(props)
-  let activeTab = props.activeTab
-  
   return (
     <div className={`workout-table`}>
       <WorkoutTableHeader2 plans={props.plans} onWorkoutClick={props.onWorkoutClick} />
@@ -41,7 +38,9 @@ const WorkoutTable2 = (props) => {
          }
       `}</style>
       {props.plans.days.map( (day) => (
-        <table key={day.id} className={day.id !== props.activeTab ? 'hidden' : 'active' }>
+        <table
+          key={day.id}
+          className={day.id !== props.activeTab ? 'hidden' : 'active' }>
           <thead>
             <tr>
               <th>Body Part</th>
@@ -57,9 +56,10 @@ const WorkoutTable2 = (props) => {
                 <td>
                   {part.exercises.map( (workout) => (
                     <p key={workout.name}>
-                      <Link href={`#`}>
-                        <a>{workout.name}</a>
-                      </Link>
+                      <a
+                        href={`#`}
+                        onClick={props.onBodyPartClick}
+                        data-file={workout.fileName}>{workout.name}</a>
                     </p>
                   ))}
                 </td>

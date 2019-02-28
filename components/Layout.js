@@ -50,6 +50,8 @@ const Layout = ( props) => {
           data={props.data}
           activeTab={props.activeTab}
           onWorkoutClick={props.onWorkoutClick}
+          onBodyPartClick={props.onBodyPartClick}
+          image={props.image}
         />
       </div>
     )

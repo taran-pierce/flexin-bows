@@ -1,4 +1,5 @@
 import WorkoutTable2 from './WorkoutTable2'
+import ImageCard from './ImageCard'
 
 const Workout = (props) => {
   const data = props.data
@@ -18,12 +19,34 @@ const Workout = (props) => {
         .workout {
           padding: 1rem;
         }
+        
+        .flex {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+        
+        .flex-item {
+          width: 50%;
+          flex-grow: 1;
+        }
       `}</style>
       <h1>{data.title}</h1>
       <p>{data.content}</p>
       <p><strong>Frequency: </strong>{data.frequency}</p>
       <p><strong>Time: </strong>{data.time}</p>
-      <WorkoutTable2 plans={plans} activeTab={props.activeTab} onWorkoutClick={props.onWorkoutClick} />
+      <div className={`flex`}>
+        <div className={`flex-item`}>
+          <WorkoutTable2
+            plans={plans}
+            activeTab={props.activeTab}
+            onWorkoutClick={props.onWorkoutClick}
+            onBodyPartClick={props.onBodyPartClick} />
+        </div>
+        <div className={`flex-item`}>
+          <ImageCard image={props.image} />
+        </div>
+      </div>
     </section>
   )
 }

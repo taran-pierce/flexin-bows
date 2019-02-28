@@ -1,10 +1,4 @@
-import Link from 'next/link'
-
 const WorkoutTableHeader2 = (props) => {
-  const days = props.plans
-  
-  console.log('days, ', days)
-  
   return (
     <div>
       <style jsx>{`
@@ -35,7 +29,9 @@ const WorkoutTableHeader2 = (props) => {
       <ul>
         {props.plans.days.map( (day) => (
           <li key={day.title}>
-            <a onClick={props.onWorkoutClick} href={`#`} data-id={day.id}>{day.title}</a>
+            <a onClick={props.onWorkoutClick}
+               href={`#`}
+               data-id={day.id}>{day.title}</a>
           </li>
         ))}
       </ul>
