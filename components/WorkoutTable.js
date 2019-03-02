@@ -1,50 +1,55 @@
 import WorkoutTableHeader from './WorkoutTableHeader'
-import Link from 'next/link'
 
 const WorkoutTable = (props) => {
-  const days = props.plans.days
-  let count = 1
-  
   return (
     <div className={`workout-table`}>
-      <WorkoutTableHeader days={days} />
+      <WorkoutTableHeader
+        plans={props.plans}
+        onWorkoutClick={props.onWorkoutClick}
+      />
       <style jsx>{`
-        table {
-          border-collapse: collapse;
-          text-align: left;
-          width: 100%;
-        }
-        
-        td, th {
-          padding: .5rem 1rem;
-          border-right: 1px solid black;
-          border-bottom: 1px solid black;
-        }
-        
-        th {
-          border-bottom-width: 2px;
-        }
-        
-        th:last-child,
-        td:last-child {
-          border-right: none;
-        }
-        
-        .workout-table {
-          border: 1px solid black;
-          border-bottom: none;
-        }
+         table {
+           border-collapse: collapse;
+           text-align: left;
+           width: 100%;
+         }
+         
+         td, th {
+           padding: .5rem 1rem;
+           border-right: 1px solid black;
+           border-bottom: 1px solid black;
+         }
+         
+         th {
+           border-bottom-width: 2px;
+         }
+         
+         th:last-child,
+         td:last-child {
+           border-right: none;
+         }
+         
+         .workout-table {
+           border: 1px solid black;
+           border-bottom: none;
+         }
+         
+         .hidden {
+           display: none;
+         }
       `}</style>
-      {days.map( (day) => (
-        <table key={day.title}>
+      {props.plans.days.map( (day) => (
+        <table
+          key={day.id}
+          className={day.id !== props.activeTab ? 'hidden' : 'active' }>
           <thead>
-          <tr>
-            <th>Body Part</th>
-            <th>Exercise</th>
-            <th>Sets</th>
-            <th>Reps</th>
-          </tr>
-        </thead>
+            <tr>
+              <th>Body Part</th>
+              <th>Exercise</th>
+              <th>Sets</th>
+              <th>Reps</th>
+            </tr>
+          </thead>
           <tbody>
             {day.bodyParts.map( (part) => (
               <tr key={part.name}>
@@ -52,9 +57,10 @@ const WorkoutTable = (props) => {
                 <td>
                   {part.exercises.map( (workout) => (
                     <p key={workout.name}>
-                      <Link href={`#`}>
-                        <a>{workout.name}</a>
-                      </Link>
+                      <a
+                        href={`#`}
+                        onClick={props.onBodyPartClick}
+                        data-file={workout.fileName}>{workout.name}</a>
                     </p>
                   ))}
                 </td>

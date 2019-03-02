@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const WorkoutTableHeader = (props) => {
   return (
     <div>
@@ -29,11 +27,11 @@ const WorkoutTableHeader = (props) => {
         }
       `}</style>
       <ul>
-        {props.days.map( (day) => (
+        {props.plans.days.map( (day) => (
           <li key={day.title}>
-            <Link href={`#`}>
-              <a>{day.title}</a>
-            </Link>
+            <a onClick={props.onWorkoutClick}
+               href={`#`}
+               data-id={day.id}>{day.title}</a>
           </li>
         ))}
       </ul>
