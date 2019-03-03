@@ -1,8 +1,8 @@
 {
-  "title": "Body Building",
-  "frequency" : "6 days on, 1 day off",
-  "time" : "45-60 Minutes",
-  "content" : "some bull shit here. Just work out!",
+  "title": "20 Minute Upper/Lower Body",
+  "frequency" : "4 days per week (M-T-Th-F)",
+  "time" : "20 Minutes",
+  "content" : "This program provides a quick and effective workout that combines muscle conditioning with some cardiovascular benefits. Perform this routine when you are limited in time or just want a variation to your normal routine. Perform this program training 2 days, resting 1 to 2. Perform all exercises to near failure, stopping at the point that your technique starts to deteriorate. Rest only 20-30 seconds between sets. As you get stronger, increase the number of sets you perform. Move slowly on each rep. use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down.",
   "workout": {
     "days": [
       {
@@ -13,60 +13,34 @@
             "name": "Chest",
             "exercises": [
               {
-                "name": "Decline Bench Press",
-                "fileName": "decline-bench-press"
-              },
-              {
                 "name": "Bench Press",
-                "fileName": "Bench Press"
+                "fileName": "bench-press-horizontal"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "3",
+            "reps": "12 - 15"
           },
-          {
-            "name": "Shoulders",
-            "exercises": [
-              {
-                "name": "Seated Shoulder Press",
-                "fileName": "cross-over-rear-deltoid"
-              },
-              {
-                "name": "Crossover Seated Rear Deltoid",
-                "fileName": "cross-over-rear-detoid"
-              },
-              {
-                "name" : "Front Shoulder Raise",
-                "fileName" : "cross-over-rear-deltiod"
-              },
-              {
-                "name" : "Scapular Retraction",
-                "fileName" : "cross-over-rear-deltiod"
-              }
-            ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
-          }
-        ]
-      },
-      {
-        "title": "2 & 4",
-        "id": "upper-lower-body-2-4",
-        "bodyParts": [
           {
             "name": "Back",
             "exercises": [
               {
                 "name": "Seated Lat Rows",
-                "fileName": "shoulder-extension"
-              },
-              {
-                "name" : "Reverse Grip Pulldowns",
-                "fileName" : "shoulder-extension"
+                "fileName": "should-extension"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "3",
+            "reps": "12 - 15"
+          },
+          {
+            "name": "Shoulders",
+            "exercises": [
+              {
+                "name": "Crossover Seated Rear Deltoid Rows",
+                "fileName": "cross-over-rear-deltiod"
+              }
+            ],
+            "sets": "3",
+            "reps": "12 - 15"
           },
           {
             "name": "Arms",
@@ -76,64 +50,56 @@
                 "fileName": "bicep-curl"
               },
               {
-                "name": "Standing Wrist Curl",
-                "fileName": "bicep-curl"
-              },
-              {
-                "name": "Triceps Pushdown",
-                "fileName": "triceps-pushdown"
-              },
-              {
                 "name": "Lying Triceps Extension",
-                "fileName": "bicep-curl"
+                "fileName": "tricep-extension"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "3",
+            "reps": "12 - 15"
           }
         ]
       },
       {
-        "title": "5 & 7",
-        "id": "upper-lower-body-5-7",
+        "title": "2 & 4",
+        "id": "upper-lower-body-2-4",
         "bodyParts": [
           {
-            "name" : "Legs",
-            "exercises" : [
+            "name": "Legs",
+            "exercises": [
               {
-                "name" : "Leg Press",
-                "fileName" : "calf-raise"
+                "name": "Leg Extension",
+                "fileName": "leg-extension"
               },
               {
-                "name" : "Leg Extension",
-                "fileName" : "trunk-rotation"
+                "name" : "Leg Press",
+                "fileName" : "leg-press"
               },
               {
                 "name" : "Standing Leg Kickback",
-                "fileName" : "calf-raise"
+                "fileName" : "standing-leg-kickback"
               },
               {
-                "name" : "Seated Hip Abduction",
-                "fileName" : "trunk-rotation"
+                "name" : "Standing Hip Abduction",
+                "fileName" : "hip-abdction"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets": "3",
+            "reps": "12 - 15"
           },
           {
-            "name" : "Trunk",
-            "exercises" : [
+            "name": "Trunk",
+            "exercises": [
               {
-                "name" : "Seated Abdominal Crunch",
-                "fileName" : "abdominal-crunch"
+                "name": "Trunk Rotation",
+                "fileName": "trunk-rotation"
               },
               {
-                "name" : "Trunk Rotation",
-                "fileName" : "abdominal-crunch"
+                "name": "Seated Abdominal Crunch",
+                "fileName": "abdominal-crunch"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets": "3",
+            "reps": "12 - 15"
           }
         ]
       }
