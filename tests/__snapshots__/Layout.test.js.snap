@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Does Layout render correctly? 1`] = `
+<div
+  className="jsx-940123235 main-layout"
+>
+  <header>
+    <nav
+      className="jsx-3182432235"
+    >
+      <ul
+        className="jsx-3182432235"
+      >
+        <li
+          className="jsx-3182432235"
+        >
+          <a
+            className="jsx-3182432235"
+            href="/"
+            onClick={[Function]}
+          >
+            Flexin Bows with Terry
+          </a>
+        </li>
+        <li
+          className="jsx-3182432235 search-box"
+        >
+          <form
+            className="jsx-3182432235"
+          >
+            <label
+              className="jsx-3182432235"
+            >
+              Search:
+              <input
+                className="jsx-3182432235"
+                type="text"
+              />
+            </label>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <ul>
+      <li>
+        <a
+          href="/better-body"
+          onClick={[Function]}
+        >
+          Better Body
+        </a>
+      </li>
+      <li>
+        <a
+          href="/advanced-conditioning"
+          onClick={[Function]}
+        >
+          Advanced Conditioning
+        </a>
+      </li>
+      <li>
+        <a
+          href="/body-building"
+          onClick={[Function]}
+        >
+          Body Building
+        </a>
+      </li>
+      <li>
+        <a
+          href="/strength-training"
+          onClick={[Function]}
+        >
+          Strength Training
+        </a>
+      </li>
+      <li>
+        <a
+          href="/aerobic"
+          onClick={[Function]}
+        >
+          Aerobic
+        </a>
+      </li>
+      <li>
+        <a
+          href="/upper-lower-body"
+          onClick={[Function]}
+        >
+          Upper Lower Body
+        </a>
+      </li>
+      <li>
+        <a
+          href="/anaerobic"
+          onClick={[Function]}
+        >
+          Anaerobic
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

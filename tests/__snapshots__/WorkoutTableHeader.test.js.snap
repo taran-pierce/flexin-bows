@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Does WorkoutTable render correctly? 1`] = `
+<div
+  className="jsx-92330898"
+>
+  <ul
+    className="jsx-92330898"
+  >
+    <li
+      className="jsx-92330898"
+    >
+      <a
+        className="jsx-92330898"
+        data-id="better-body-1-3"
+        href="#"
+      >
+        1 & 3
+      </a>
+    </li>
+    <li
+      className="jsx-92330898"
+    >
+      <a
+        className="jsx-92330898"
+        data-id="better-body-2-4"
+        href="#"
+      >
+        2 & 4
+      </a>
+    </li>
+    <li
+      className="jsx-92330898"
+    >
+      <a
+        className="jsx-92330898"
+        data-id="better-body-5-7"
+        href="#"
+      >
+        5 & 7
+      </a>
+    </li>
+  </ul>
+</div>
+`;
