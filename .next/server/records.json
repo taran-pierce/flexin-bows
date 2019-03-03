@@ -1,0 +1,59 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/advanced-conditioning.js": 0,
+      "multi private-next-pages/aerobic.js": 1,
+      "multi private-next-pages/anaerobic.js": 2,
+      "multi private-next-pages/better-body.js": 3,
+      "multi private-next-pages/body-building.js": 4,
+      "multi private-next-pages/index.js": 5,
+      "multi private-next-pages/strength-training.js": 6,
+      "multi private-next-pages/upper-lower-body.js": 7,
+      "multi next/dist/pages/_app": 8,
+      "multi next/dist/pages/_error": 9,
+      "multi next/dist/pages/_document": 10
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/_app.js": 0,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/_document.js": 1,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/_error.js": 2,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/advanced-conditioning.js": 3,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/aerobic.js": 4,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/anaerobic.js": 5,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/better-body.js": 6,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/body-building.js": 7,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/index.js": 8,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/strength-training.js": 9,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/upper-lower-body.js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

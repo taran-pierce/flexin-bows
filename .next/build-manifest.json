@@ -1,0 +1,60 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/advanced-conditioning": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/aerobic": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/anaerobic": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/better-body": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/body-building": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/strength-training": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/upper-lower-body": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ],
+    "/": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.b5a0559e9f2bc4677f91.js",
+      "static/runtime/main-bbafa84624b1b03167b6.js"
+    ]
+  }
+}

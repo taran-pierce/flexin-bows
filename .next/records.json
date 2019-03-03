@@ -1,0 +1,43 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi node_modules/next/dist/client/next": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/_app.js": 2,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/_error.js": 3,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/advanced-conditioning.js": 4,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/aerobic.js": 5,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/anaerobic.js": 6,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/better-body.js": 7,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/body-building.js": 8,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/index.js": 9,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/strength-training.js": 10,
+      "static/MuRNz5otZNjHTtv1UgH6T/pages/upper-lower-body.js": 11,
+      "static/runtime/main.js": 12
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
