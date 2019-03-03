@@ -8,8 +8,8 @@ class Page extends React.Component {
   
     // TODO how do I get this first activeTab by default
     this.state = {
-      activeTab: 'better-body-1-3',
-      image: '/static/images/exercises/edited/decline-bench-press.jpg',
+      activeTab: 'better-body-M-W-F',
+      image: '/static/images/exercises/edited/bench-press-horizontal.jpg',
       value: ''
     }
   

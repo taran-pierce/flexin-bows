@@ -1,8 +1,8 @@
 {
-  "title": "Body Building",
-  "frequency" : "6 days on, 1 day off",
-  "time" : "45-60 Minutes",
-  "content" : "some bull shit here. Just work out!",
+  "title": "Advanced General Conditioning",
+  "frequency" : "4 days per week (M-T-Th-F)",
+  "time" : "20 Minutes",
+  "content" : "When  you are proficient in performing the exercise techniques of the above workout and are no longer realizing results, or have become just plain bored, it is time to change your program. You can increase your training with thi 'split system' routine that works opposing muscle groups on different days. To do this, you will increase your resistance when you can perform 12 reps perfectly and you will increase you volume by performing more sets and more exercises. Move slowly on each rep. Use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down and work to fatigue during each set.",
   "workout": {
     "days": [
       {
@@ -13,12 +13,8 @@
             "name": "Chest",
             "exercises": [
               {
-                "name": "Decline Bench Press",
-                "fileName": "decline-bench-press"
-              },
-              {
                 "name": "Bench Press",
-                "fileName": "Bench Press"
+                "fileName": "bench-press-horizontal"
               }
             ],
             "sets": "1 - 2",
@@ -29,19 +25,37 @@
             "exercises": [
               {
                 "name": "Seated Shoulder Press",
-                "fileName": "cross-over-rear-deltoid"
+                "fileName": "seated-shouder-press"
+              }
+            ],
+            "sets": "1 - 2",
+            "reps": "10 - 15"
+          },
+          {
+            "name": "Arms",
+            "exercises": [
+              {
+                "name": "Triceps Pushdown",
+                "fileName": "triceps-pushdown"
               },
               {
-                "name": "Crossover Seated Rear Deltoid",
-                "fileName": "cross-over-rear-detoid"
+                "name": "Standing Biceps Curl",
+                "fileName": "bicep-curl"
+              }
+            ],
+            "sets": "1 - 2",
+            "reps": "10 - 15"
+          },
+          {
+            "name": "Legs",
+            "exercises": [
+              {
+                "name": "Leg Extension",
+                "fileName": "leg-extension"
               },
               {
-                "name" : "Front Shoulder Raise",
-                "fileName" : "cross-over-rear-deltiod"
-              },
-              {
-                "name" : "Scapular Retraction",
-                "fileName" : "cross-over-rear-deltiod"
+                "name": "Calf Raise",
+                "fileName": "calf-raise"
               }
             ],
             "sets": "1 - 2",
@@ -61,8 +75,19 @@
                 "fileName": "shoulder-extension"
               },
               {
-                "name" : "Reverse Grip Pulldowns",
-                "fileName" : "shoulder-extension"
+                "name" : "Stiff Arm Pulldowns",
+                "fileName" : "stiff-arm-pulldowns"
+              }
+            ],
+            "sets": "1 - 2",
+            "reps": "10 - 15"
+          },
+          {
+            "name": "Shoulders",
+            "exercises": [
+              {
+                "name": "Crossover Seated Rear Deltoid Rows",
+                "fileName": "cross-over-rear-deltiod"
               }
             ],
             "sets": "1 - 2",
@@ -76,64 +101,27 @@
                 "fileName": "bicep-curl"
               },
               {
-                "name": "Standing Wrist Curl",
-                "fileName": "bicep-curl"
-              },
-              {
                 "name": "Triceps Pushdown",
                 "fileName": "triceps-pushdown"
-              },
-              {
-                "name": "Lying Triceps Extension",
-                "fileName": "bicep-curl"
               }
             ],
             "sets": "1 - 2",
             "reps": "10 - 15"
-          }
-        ]
-      },
-      {
-        "title": "5 & 7",
-        "id": "advanced-conditioning-5-7",
-        "bodyParts": [
-          {
-            "name" : "Legs",
-            "exercises" : [
-              {
-                "name" : "Leg Press",
-                "fileName" : "calf-raise"
-              },
-              {
-                "name" : "Leg Extension",
-                "fileName" : "trunk-rotation"
-              },
-              {
-                "name" : "Standing Leg Kickback",
-                "fileName" : "calf-raise"
-              },
-              {
-                "name" : "Seated Hip Abduction",
-                "fileName" : "trunk-rotation"
-              }
-            ],
-            "sets" : "1-2",
-            "reps" : "10-15"
           },
           {
-            "name" : "Trunk",
-            "exercises" : [
+            "name": "Trunk",
+            "exercises": [
               {
-                "name" : "Seated Abdominal Crunch",
-                "fileName" : "abdominal-crunch"
+                "name": "Trunk Rotation",
+                "fileName": "trunk-rotation"
               },
               {
-                "name" : "Trunk Rotation",
-                "fileName" : "abdominal-crunch"
+                "name": "Seated Abdominal Crunch",
+                "fileName": "abdominal-crunch"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets": "1 - 2",
+            "reps": "10 - 15"
           }
         ]
       }
