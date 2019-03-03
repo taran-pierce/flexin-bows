@@ -2,7 +2,7 @@
   "title": "Body Building",
   "frequency" : "6 days on, 1 day off",
   "time" : "45-60 Minutes",
-  "content" : "Body building is a great exercise or some shit like that. I'm sure there is going to be some information I can copy out of that book and put in here so that this has some content to look legit. Just work out for now!",
+  "content" : "Body building requires focused concentration and dedication to training, as well as proper eating habits. Work each muscle group to fatigue before moving on to the next exercise. Do not neglect any muscle group If needed, include an aerobic activity to increase your caloric expenditure and help to reduce your body fat levels to achieve a defined muscular look. Res 30-60 seconds between each set and exercise. Focus on proper form. Tighten the muscle before you move, squeeze the muscle as you move, and crap the muscle at the point of full contraction., and resist the movement as you lower the weight. Move slowly on each rep. use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down and work to fatigue during each set.",
   "workout": {
     "days": [
       {
@@ -21,8 +21,8 @@
                 "fileName": "bench-press-horizontal"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "8 - 12"
           },
           {
             "name": "Shoulders",
@@ -32,20 +32,20 @@
                 "fileName": "seated-shouder-press"
               },
               {
-                "name": "Crossover Seated Rear Deltoid",
+                "name": "Crossover Seated Rear Deltoid Rows",
                 "fileName": "cross-over-rear-deltiod"
               },
               {
                 "name" : "Front Shoulder Raise",
-                "fileName" : "should-extension"
+                "fileName" : "should-relxion"
               },
               {
                 "name" : "Scapular Retraction",
                 "fileName" : "scapular-retraction"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "8 - 12"
           }
         ]
       },
@@ -65,8 +65,8 @@
                 "fileName" : "reverse-grip-pulldown"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "8 - 12"
           },
           {
             "name": "Arms",
@@ -88,8 +88,8 @@
                 "fileName": "tricep-extension"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "8 - 12"
           }
         ]
       },
@@ -117,8 +117,8 @@
                 "fileName" : "hip-abdction"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets" : "2 - 4",
+            "reps" : "8 - 12"
           },
           {
             "name" : "Trunk",
@@ -132,8 +132,8 @@
                 "fileName" : "trunk-rotation"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets" : "2 - 4",
+            "reps" : "8 - 12"
           }
         ]
       }
