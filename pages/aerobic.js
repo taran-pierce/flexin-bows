@@ -7,8 +7,8 @@ class Page extends React.Component {
     super(props)
     
     this.state = {
-      activeTab: 'aerobic-1-3',
-      image: '/static/images/exercises/edited/decline-bench-press.jpg',
+      activeTab: 'aerobic-1',
+      image: '/static/images/exercises/edited/bench-press-horizontal.jpg',
       value: ''
     }
     

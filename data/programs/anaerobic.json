@@ -1,8 +1,8 @@
 {
-  "title": "Body Building",
+  "title": "Circuit Training - Anaerobic/Cardiovascular",
   "frequency" : "6 days on, 1 day off",
-  "time" : "45-60 Minutes",
-  "content" : "some bull shit here. Just work out!",
+  "time" : "20 - 45 Minutes",
+  "content" : "Circuit training is a great way to achieve the benefits of strength training and cardiovascular training in one quick, challenging routine. The idea is to move quickly from exercise to exercise , taking only as much rest between sets as it takes to set up the next exercise (less than 20 seconds). One circuit equals on set of each exercise. Initially, start with completing one round of Circuit 1. Then add an additional round fo the same circuit. Once you reach three round sof Circuit 1, add one round of Circuit 2. Add additional rounds of Circuit 2 as your fitness level increases. Repeat the process with Circuit 3. Do not let your heart rate exceed 220, minus your resting hear rate. Perform each rep of each exercise slowly. Count three seconds up and three seconds down.",
   "workout": {
     "days": [
       {
@@ -13,39 +13,56 @@
             "name": "Chest",
             "exercises": [
               {
-                "name": "Decline Bench Press",
-                "fileName": "decline-bench-press"
-              },
-              {
                 "name": "Bench Press",
-                "fileName": "Bench Press"
+                "fileName": "bench-press-horizontal"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "1",
+            "reps": "8 - 12"
           },
           {
-            "name": "Shoulders",
+            "name": "Legs",
             "exercises": [
               {
-                "name": "Seated Shoulder Press",
-                "fileName": "cross-over-rear-deltoid"
-              },
-              {
-                "name": "Crossover Seated Rear Deltoid",
-                "fileName": "cross-over-rear-detoid"
-              },
-              {
-                "name" : "Front Shoulder Raise",
-                "fileName" : "cross-over-rear-deltiod"
-              },
-              {
-                "name" : "Scapular Retraction",
-                "fileName" : "cross-over-rear-deltiod"
+                "name": "Leg Press",
+                "fileName": "leg-press"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Back",
+            "exercises": [
+              {
+                "name": "Seated Lat Rows",
+                "fileName": "aerobic-rowing"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Legs",
+            "exercises": [
+              {
+                "name": "Calf Raise",
+                "fileName": "calf-raise"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Trunk",
+            "exercises": [
+              {
+                "name": "Seated Abdominal Crunch",
+                "fileName": "abdominal-crunch"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
           }
         ]
       },
@@ -54,19 +71,48 @@
         "id": "anaerobic-2-4",
         "bodyParts": [
           {
+            "name": "Shoulders",
+            "exercises": [
+              {
+                "name": "Seated Shoulder Press",
+                "fileName": "bench-press-horizontal"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Legs",
+            "exercises": [
+              {
+                "name": "Leg Extension",
+                "fileName": "leg-extension"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
             "name": "Back",
             "exercises": [
               {
-                "name": "Seated Lat Rows",
-                "fileName": "shoulder-extension"
-              },
-              {
-                "name" : "Reverse Grip Pulldowns",
-                "fileName" : "shoulder-extension"
+                "name": "Narrow Pulldowns",
+                "fileName": "narrow-pulldown"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Trunk",
+            "exercises": [
+              {
+                "name": "Seated Abdominal Crunch",
+                "fileName": "abdominal-crunch"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
           },
           {
             "name": "Arms",
@@ -74,22 +120,10 @@
               {
                 "name": "Standing Biceps Curl",
                 "fileName": "bicep-curl"
-              },
-              {
-                "name": "Standing Wrist Curl",
-                "fileName": "bicep-curl"
-              },
-              {
-                "name": "Triceps Pushdown",
-                "fileName": "triceps-pushdown"
-              },
-              {
-                "name": "Lying Triceps Extension",
-                "fileName": "bicep-curl"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "1",
+            "reps": "8 - 12"
           }
         ]
       },
@@ -98,42 +132,48 @@
         "id": "anaerobic-5-7",
         "bodyParts": [
           {
-            "name" : "Legs",
-            "exercises" : [
+            "name": "Shoulders",
+            "exercises": [
               {
-                "name" : "Leg Press",
-                "fileName" : "calf-raise"
-              },
-              {
-                "name" : "Leg Extension",
-                "fileName" : "trunk-rotation"
-              },
-              {
-                "name" : "Standing Leg Kickback",
-                "fileName" : "calf-raise"
-              },
-              {
-                "name" : "Seated Hip Abduction",
-                "fileName" : "trunk-rotation"
+                "name": "Crossover Seated Rear Deltoid Rows",
+                "fileName": "cross-over-rear-deltiod"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets": "1",
+            "reps": "8 - 12"
           },
           {
-            "name" : "Trunk",
-            "exercises" : [
+            "name": "Arms",
+            "exercises": [
               {
-                "name" : "Seated Abdominal Crunch",
-                "fileName" : "abdominal-crunch"
-              },
-              {
-                "name" : "Trunk Rotation",
-                "fileName" : "abdominal-crunch"
+                "name": "Triceps Pushdown",
+                "fileName": "triceps-pushdown"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Legs",
+            "exercises": [
+              {
+                "name": "Calf Raise",
+                "fileName": "calf-raise"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
+          },
+          {
+            "name": "Trunk",
+            "exercises": [
+              {
+                "name": "Trunk Rotation",
+                "fileName": "trunk-rotation"
+              }
+            ],
+            "sets": "1",
+            "reps": "8 - 12"
           }
         ]
       }

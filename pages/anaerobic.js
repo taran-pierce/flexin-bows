@@ -8,7 +8,7 @@ class Page extends React.Component {
     
     this.state = {
       activeTab: 'anaerobic-1-3',
-      image: '/static/images/exercises/edited/decline-bench-press.jpg',
+      image: '/static/images/exercises/edited/bench-press-horizontal.jpg',
       value: ''
     }
     
