@@ -1,8 +1,8 @@
 {
-  "title": "Body Building",
-  "frequency" : "6 days on, 1 day off",
+  "title": "Strength Training",
+  "frequency" : "3 days per week (M-W-F)",
   "time" : "45-60 Minutes",
-  "content" : "some bull shit here. Just work out!",
+  "content" : "This program is designed to emphasize overall strength development. This is an advanced routine to be used only after you have progressed from teh advanced general conditioning routine and only after you have perfected your exercise techniques. Work each set to near exhaustion. If you can perform more than 5 to 8 reps, you should in crease your resistance 5 lbs and decrease your reps to 5. Reset 60 - 120 seconds between each set and exercise. Focus on proper form. Tighten the muscle before you move, squeeze the muscle as you move, cramp the muscle as the point of full contraction, and resist the movement as you lower the weight. Move slowly on each rep, use a pace that would allow you to stop the movement instantly at any point in the rep. Counting the two seconds up th and four seconds down and work to fatigue during each set.",
   "workout": {
     "days": [
       {
@@ -18,34 +18,30 @@
               },
               {
                 "name": "Bench Press",
-                "fileName": "Bench Press"
+                "fileName": "bench-press-horizontal"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "5 - 8"
           },
           {
             "name": "Shoulders",
             "exercises": [
               {
                 "name": "Seated Shoulder Press",
-                "fileName": "cross-over-rear-deltoid"
+                "fileName": "should-relxion"
               },
               {
-                "name": "Crossover Seated Rear Deltoid",
-                "fileName": "cross-over-rear-detoid"
+                "name": "Crossover Seated Rear Deltoid Rows",
+                "fileName": "cross-over-rear-deltiod"
               },
               {
                 "name" : "Front Shoulder Raise",
-                "fileName" : "cross-over-rear-deltiod"
-              },
-              {
-                "name" : "Scapular Retraction",
-                "fileName" : "cross-over-rear-deltiod"
+                "fileName" : "scapular-retraction"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "5 - 8"
           }
         ]
       },
@@ -61,12 +57,12 @@
                 "fileName": "shoulder-extension"
               },
               {
-                "name" : "Reverse Grip Pulldowns",
-                "fileName" : "shoulder-extension"
+                "name" : "Stiff Arm Pulldowns",
+                "fileName" : "stiff-arm-pulldowns"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "5 - 8"
           },
           {
             "name": "Arms",
@@ -77,19 +73,19 @@
               },
               {
                 "name": "Standing Wrist Curl",
-                "fileName": "bicep-curl"
+                "fileName": "wrist-curl"
               },
               {
                 "name": "Triceps Pushdown",
                 "fileName": "triceps-pushdown"
               },
               {
-                "name": "Lying Triceps Extension",
-                "fileName": "bicep-curl"
+                "name": "Triceps Extension",
+                "fileName": "tricep-extension"
               }
             ],
-            "sets": "1 - 2",
-            "reps": "10 - 15"
+            "sets": "2 - 4",
+            "reps": "5 - 8"
           }
         ]
       },
@@ -106,19 +102,15 @@
               },
               {
                 "name" : "Leg Extension",
-                "fileName" : "trunk-rotation"
+                "fileName" : "leg-extension"
               },
               {
                 "name" : "Standing Leg Kickback",
-                "fileName" : "calf-raise"
-              },
-              {
-                "name" : "Seated Hip Abduction",
-                "fileName" : "trunk-rotation"
+                "fileName" : "standing-leg-kickback"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets" : "2 - 4",
+            "reps" : "5 - 8"
           },
           {
             "name" : "Trunk",
@@ -129,11 +121,11 @@
               },
               {
                 "name" : "Trunk Rotation",
-                "fileName" : "abdominal-crunch"
+                "fileName" : "trunk-rotation"
               }
             ],
-            "sets" : "1-2",
-            "reps" : "10-15"
+            "sets" : "2 - 4",
+            "reps" : "5 - 8"
           }
         ]
       }
