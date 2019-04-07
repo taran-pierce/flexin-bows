@@ -10,7 +10,8 @@ class Page extends React.Component {
     this.state = {
       activeTab: 'better-body-M-W-F',
       image: '/static/images/exercises/edited/bench-press-horizontal.jpg',
-      value: ''
+      value: '',
+      showDesc: 1
     }
   
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
@@ -18,9 +19,16 @@ class Page extends React.Component {
     this.onChange = this.onChange.bind(this)
   }
   
+  // TODO name this better
+  // toggles desc of work
   onChange(event) {
     event.preventDefault()
-    console.log('oh hai, stop')
+
+    if (this.state.showDesc) {
+      this.setState({ showDesc: 0 })
+    } else {
+      this.setState({ showDesc: 1 })
+    }
   }
   
   onBodyPartClick(event) {
@@ -43,6 +51,7 @@ class Page extends React.Component {
         data={data}
         activeTab={this.state.activeTab}
         onChange={this.onChange}
+        showDesc={this.state.showDesc}
         onWorkoutClick={this.onWorkoutClick}
         onBodyPartClick={this.onBodyPartClick}
         image={this.state.image}
