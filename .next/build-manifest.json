@@ -11,11 +11,35 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/body-building": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/strength-training": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/advanced-conditioning": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/better-body": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/upper-lower-body": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

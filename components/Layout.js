@@ -62,6 +62,8 @@ const Layout = ( props) => {
           image={props.image}
           onChange={props.onChange}
           showDesc={props.showDesc}
+          onSizeChange={props.onSizeChange}
+          imageSize={props.imageSize}
         />
       </div>
     )

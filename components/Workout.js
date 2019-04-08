@@ -5,14 +5,24 @@ const Workout = (props) => {
   const data = props.data
   const plans = props.data.workout
 
-  let toggleIcon = '+'
+  let toggleIcon = '(Show Description)'
 
   if (props.showDesc) {
-    toggleIcon = '-'
+    toggleIcon = '(Hide Description)'
+  }
+
+  let sizeIcon = '(Smaller Image)'
+
+  if (props.imageSize === 'small') {
+    sizeIcon = '(Larger Image)'
+  }
+
+  if (props.imageSize === 'large') {
+    sizeIcon = '(Smaller Image)'
   }
   
   return (
-    <section className={`workout`}>
+    <section className={`workout ${props.showDesc ? 'active' : ''}`}>
       <style jsx>{`
         h1 {
           background-color: #7c6f5e;
@@ -38,35 +48,76 @@ const Workout = (props) => {
         }
         
         .flex-item {
-          width: 50%;
           flex-grow: 1;
+          transition: width .5s ease-in-out;
         }
 
-        .workout-content p {
+        .flex-item.table {
+          width: 60%;
+        }
+
+        .flex-item.image {
+          width: 40%;
+        }
+
+        .flex.large-image .flex-item.image {
+          width: 56%;
+        }
+        .flex.large-image .flex-item.table {
+          width: 44%;
+        }
+
+        .flex.small-image .flex-item.image {
+          width: 40%;
+        }
+        .flex.small-image .flex-item.table {
+          width: 60%;
+        }
+
+        .workout .workout-content {
           background: rgba(255,255,255,.5);
           border: 1px solid rgba(0,0,0,.4);
           box-shadow: 0 2px 2px rgba(0,0,0,.3);
           transition: opacity .5s ease-in-out,
-                      max-height .5s ease-in-out;
+                      max-height .5s ease-in-out,
+                      box-shadow .5s ease-in-out,
+                      padding .5s ease-in-out;
           opacity: 0;
-          padding: 1rem;
-          margin-top: 0;
+          padding: 0 1rem;
+          margin: 0 0 1rem;
           max-height: 0;
         }
 
-        .workout-content.active p {
+        small {
+          font-size: 60%;
+          padding-top: .5rem;
+        }
+
+        small + small {
+          margin-right: .5rem;
+        }
+
+        .workout.active .workout-content {
           opacity: 1;
+          padding: 1rem;
           max-height: 600px;
         }
+
+        .workout.active h1 {
+          box-shadow: none;
+        }
       `}</style>
-      <div className={`workout-content ${props.showDesc ? 'active' : ''}`}>
-        <h1>{data.title} <span id={`toggle-desc`} className={`close`} onClick={props.onChange}>{toggleIcon}</span></h1>
-        <p>{data.content}</p>
-      </div>
-      <p><strong>Frequency: </strong>{data.frequency}</p>
-      <p><strong>Time: </strong>{data.time}</p>
-      <div className={`flex`}>
-        <div className={`flex-item`}>
+        <h1>{data.title} 
+          <small id={`toggle-desc`} className={`close`} onClick={props.onChange}>{toggleIcon}</small>
+          <small id={`toggle-size`} className={`close`} onClick={props.onSizeChange}>{sizeIcon}</small>
+        </h1>
+        <div className={`workout-content`}>
+          <p><strong>Frequency: </strong>{data.frequency}</p>
+          <p><strong>Time: </strong>{data.time}</p>
+          <p>{data.content}</p>
+        </div>
+      <div className={`flex ${props.imageSize === 'large' ? 'large-image' : 'small-image'}`}>
+        <div className={`flex-item table`}>
           <WorkoutTable
             plans={plans}
             activeTab={props.activeTab}
@@ -74,7 +125,7 @@ const Workout = (props) => {
             onBodyPartClick={props.onBodyPartClick}
           />
         </div>
-        <div className={`flex-item`}>
+        <div className={`flex-item image`}>
           <ImageCard image={props.image} />
         </div>
       </div>

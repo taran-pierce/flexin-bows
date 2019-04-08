@@ -11,12 +11,14 @@ class Page extends React.Component {
       activeTab: 'better-body-M-W-F',
       image: '/static/images/exercises/edited/bench-press-horizontal.jpg',
       value: '',
-      showDesc: 1
+      showDesc: 1,
+      imageSize: 'small'
     }
   
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
     this.onBodyPartClick = this.onBodyPartClick.bind(this)
     this.onChange = this.onChange.bind(this)
+    this.onSizeChange = this.onSizeChange.bind(this)
   }
   
   // TODO name this better
@@ -28,6 +30,19 @@ class Page extends React.Component {
       this.setState({ showDesc: 0 })
     } else {
       this.setState({ showDesc: 1 })
+    }
+  }
+
+  onSizeChange(event) {
+    event.preventDefault()
+
+    console.log('oh hai onSizeChange')
+
+    if (this.state.imageSize === 'large') {
+      this.setState({ imageSize: 'small' })
+    } 
+    if (this.state.imageSize === 'small') {
+      this.setState({ imageSize: 'large' })
     }
   }
   
@@ -55,6 +70,8 @@ class Page extends React.Component {
         onWorkoutClick={this.onWorkoutClick}
         onBodyPartClick={this.onBodyPartClick}
         image={this.state.image}
+        onSizeChange={this.onSizeChange}
+        imageSize={this.state.imageSize}
       />
     )
   }
