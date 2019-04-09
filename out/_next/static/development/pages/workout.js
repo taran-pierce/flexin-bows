@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/workout.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -563,6 +563,130 @@ var WorkoutTableHeader = function WorkoutTableHeader(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (WorkoutTableHeader);
+
+/***/ }),
+
+/***/ "./data/programs sync recursive ^\\.\\/.*$":
+/*!*************************************!*\
+  !*** ./data/programs sync ^\.\/.*$ ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./advanced-conditioning": "./data/programs/advanced-conditioning.json",
+	"./advanced-conditioning.json": "./data/programs/advanced-conditioning.json",
+	"./aerobic": "./data/programs/aerobic.json",
+	"./aerobic.json": "./data/programs/aerobic.json",
+	"./anaerobic": "./data/programs/anaerobic.json",
+	"./anaerobic.json": "./data/programs/anaerobic.json",
+	"./better-body": "./data/programs/better-body.json",
+	"./better-body.json": "./data/programs/better-body.json",
+	"./body-building": "./data/programs/body-building.json",
+	"./body-building.json": "./data/programs/body-building.json",
+	"./strength-training": "./data/programs/strength-training.json",
+	"./strength-training.json": "./data/programs/strength-training.json",
+	"./upper-lower-body": "./data/programs/upper-lower-body.json",
+	"./upper-lower-body.json": "./data/programs/upper-lower-body.json"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./data/programs sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./data/programs/advanced-conditioning.json":
+/*!**************************************************!*\
+  !*** ./data/programs/advanced-conditioning.json ***!
+  \**************************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"Advanced General Conditioning","frequency":"4 days per week (M-T-Th-F)","time":"20 Minutes","content":"When  you are proficient in performing the exercise techniques of the above workout and are no longer realizing results, or have become just plain bored, it is time to change your program. You can increase your training with thi 'split system' routine that works opposing muscle groups on different days. To do this, you will increase your resistance when you can perform 12 reps perfectly and you will increase you volume by performing more sets and more exercises. Move slowly on each rep. Use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down and work to fatigue during each set.","workout":{"days":[{"title":"1 & 3","id":"advanced-conditioning-1-3","bodyParts":[{"name":"Chest","exercises":[{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Shoulders","exercises":[{"name":"Seated Shoulder Press","fileName":"seated-shouder-press"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Arms","exercises":[{"name":"Triceps Pushdown","fileName":"triceps-pushdown"},{"name":"Standing Biceps Curl","fileName":"bicep-curl"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Legs","exercises":[{"name":"Leg Extension","fileName":"leg-extension"},{"name":"Calf Raise","fileName":"calf-raise"}],"sets":"1 - 2","reps":"10 - 15"}]},{"title":"2 & 4","id":"advanced-conditioning-2-4","bodyParts":[{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"shoulder-extension"},{"name":"Stiff Arm Pulldowns","fileName":"stiff-arm-pulldowns"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Shoulders","exercises":[{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"},{"name":"Triceps Pushdown","fileName":"triceps-pushdown"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"},{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"}],"sets":"1 - 2","reps":"10 - 15"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/aerobic.json":
+/*!************************************!*\
+  !*** ./data/programs/aerobic.json ***!
+  \************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"True Aerobic Circuit Training","frequency":"2 - 3 times per week","time":"20-60 Minutes","content":"Circuit training is a great way to achieve the benefits of strength training and cardiovascular training in one quick, challenging routing. By returning to an aerobic exercise between each set you are increasing your aerobic capacity, endurance, and burning fat as energy. The idea is to move quickly from exercise to exercise, taking only as much rest between sets as it takes to set up the next exercise (less than 20 seconds). One circuit equals one set of each exercise. Initially, start with completing one round of Circuit 1. Then add an additional round fo the same circuit. Once you reach three round sof Circuit 1, add one round of Circuit 2. Add additional rounds of Circuit 2 as your fitness level increases. Repeat the process with Circuit 3. Do not let your heart rate exceed 220, minus your resting hear rate. Perform each rep of each exercise slowly. Count three seconds up and three seconds down.","workout":{"days":[{"title":"Circuit 1","id":"aerobic-1","bodyParts":[{"name":"Chest","exercises":[{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Leg Press","fileName":"leg-press"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"should-extension"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Calf Raise","fileName":"calf-raise"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"}]},{"title":"Circuit 2","id":"aerobic-2","bodyParts":[{"name":"Shoulders","exercises":[{"name":"Seated Shoulder Press","fileName":"bench-press-horizontal"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Leg Extension","fileName":"leg-extension"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Back","exercises":[{"name":"Reverse Grip Pulldown","fileName":"reverse-grip-pulldown"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"}],"sets":"1","reps":"8 - 12"},{"name":"Aerobic Exercise","exercises":[{"name":"30 - 60 Seconds","fileName":"scapular-retraction"}],"sets":"1","reps":"8 - 12"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"}],"sets":"1","reps":"8 - 12"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/anaerobic.json":
+/*!**************************************!*\
+  !*** ./data/programs/anaerobic.json ***!
+  \**************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"Circuit Training - Anaerobic/Cardiovascular","frequency":"6 days on, 1 day off","time":"20 - 45 Minutes","content":"Circuit training is a great way to achieve the benefits of strength training and cardiovascular training in one quick, challenging routine. The idea is to move quickly from exercise to exercise , taking only as much rest between sets as it takes to set up the next exercise (less than 20 seconds). One circuit equals on set of each exercise. Initially, start with completing one round of Circuit 1. Then add an additional round fo the same circuit. Once you reach three round sof Circuit 1, add one round of Circuit 2. Add additional rounds of Circuit 2 as your fitness level increases. Repeat the process with Circuit 3. Do not let your heart rate exceed 220, minus your resting hear rate. Perform each rep of each exercise slowly. Count three seconds up and three seconds down.","workout":{"days":[{"title":"1 & 3","id":"anaerobic-1-3","bodyParts":[{"name":"Chest","exercises":[{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Leg Press","fileName":"leg-press"}],"sets":"1","reps":"8 - 12"},{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"aerobic-rowing"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Calf Raise","fileName":"calf-raise"}],"sets":"1","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"}],"sets":"1","reps":"8 - 12"}]},{"title":"2 & 4","id":"anaerobic-2-4","bodyParts":[{"name":"Shoulders","exercises":[{"name":"Seated Shoulder Press","fileName":"bench-press-horizontal"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Leg Extension","fileName":"leg-extension"}],"sets":"1","reps":"8 - 12"},{"name":"Back","exercises":[{"name":"Narrow Pulldowns","fileName":"narrow-pulldown"}],"sets":"1","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"}],"sets":"1","reps":"8 - 12"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"}],"sets":"1","reps":"8 - 12"}]},{"title":"5 & 7","id":"anaerobic-5-7","bodyParts":[{"name":"Shoulders","exercises":[{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"}],"sets":"1","reps":"8 - 12"},{"name":"Arms","exercises":[{"name":"Triceps Pushdown","fileName":"triceps-pushdown"}],"sets":"1","reps":"8 - 12"},{"name":"Legs","exercises":[{"name":"Calf Raise","fileName":"calf-raise"}],"sets":"1","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"}],"sets":"1","reps":"8 - 12"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/better-body.json":
+/*!****************************************!*\
+  !*** ./data/programs/better-body.json ***!
+  \****************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"20 Minute Better Body Workout","frequency":"3 Days per week (M-W-F)","time":"20 Minutes","content":"Start by performing one set of each exercise. Warm up with a light resistance that you can perform easily for 5/10 reps without fatigue. Focus on practicing and learning your technique before increasing the resistance. Then move to a more challenging resistance that you can perform no less than 10 reps and no more than 15 reps. As you become stronger, you can advance to two sets for each exercise. Complete all sets of each exercise before moving ont to the next one. Res 30 to 45 seconds between sets. Move slowly on each repo. Use a pace that would allow you to stop the movement instantly at any point in the repo. Count three seconds up and threes seconds down and work to fatigue during each set.","workout":{"days":[{"title":"M-W-F","id":"better-body-M-W-F","bodyParts":[{"name":"Chest","exercises":[{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"shoulder-extension"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Shoulders","exercises":[{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"},{"name":"Triceps Pushdown","fileName":"triceps-pushdown"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Legs","exercises":[{"name":"Calf Raise","fileName":"calf-raise"},{"name":"Leg Press","fileName":"leg-press"}],"sets":"1 - 2","reps":"10 - 15"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"},{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"}],"sets":"1 - 2","reps":"10 - 15"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/body-building.json":
+/*!******************************************!*\
+  !*** ./data/programs/body-building.json ***!
+  \******************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"Body Building","frequency":"6 days on, 1 day off","time":"45-60 Minutes","content":"Body building requires focused concentration and dedication to training, as well as proper eating habits. Work each muscle group to fatigue before moving on to the next exercise. Do not neglect any muscle group If needed, include an aerobic activity to increase your caloric expenditure and help to reduce your body fat levels to achieve a defined muscular look. Res 30-60 seconds between each set and exercise. Focus on proper form. Tighten the muscle before you move, squeeze the muscle as you move, and crap the muscle at the point of full contraction., and resist the movement as you lower the weight. Move slowly on each rep. use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down and work to fatigue during each set.","workout":{"days":[{"title":"1 & 3","id":"body-building-1-3","bodyParts":[{"name":"Chest","exercises":[{"name":"Decline Bench Press","fileName":"decline-bench-press"},{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"2 - 4","reps":"8 - 12"},{"name":"Shoulders","exercises":[{"name":"Seated Shoulder Press","fileName":"seated-shouder-press"},{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"},{"name":"Front Shoulder Raise","fileName":"should-relxion"},{"name":"Scapular Retraction","fileName":"scapular-retraction"}],"sets":"2 - 4","reps":"8 - 12"}]},{"title":"2 & 4","id":"body-building-2-4","bodyParts":[{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"should-extension"},{"name":"Reverse Grip Pulldowns","fileName":"reverse-grip-pulldown"}],"sets":"2 - 4","reps":"8 - 12"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"},{"name":"Standing Wrist Curl","fileName":"wrist-curl"},{"name":"Triceps Pushdown","fileName":"triceps-pushdown"},{"name":"Lying Triceps Extension","fileName":"tricep-extension"}],"sets":"2 - 4","reps":"8 - 12"}]},{"title":"5 & 7","id":"body-building-5-7","bodyParts":[{"name":"Legs","exercises":[{"name":"Leg Press","fileName":"leg-press"},{"name":"Leg Extension","fileName":"leg-extension"},{"name":"Standing Leg Kickback","fileName":"standing-leg-kickback"},{"name":"Seated Hip Abduction","fileName":"hip-abdction"}],"sets":"2 - 4","reps":"8 - 12"},{"name":"Trunk","exercises":[{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"},{"name":"Trunk Rotation","fileName":"trunk-rotation"}],"sets":"2 - 4","reps":"8 - 12"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/strength-training.json":
+/*!**********************************************!*\
+  !*** ./data/programs/strength-training.json ***!
+  \**********************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"Strength Training","frequency":"3 days per week (M-W-F)","time":"45-60 Minutes","content":"This program is designed to emphasize overall strength development. This is an advanced routine to be used only after you have progressed from teh advanced general conditioning routine and only after you have perfected your exercise techniques. Work each set to near exhaustion. If you can perform more than 5 to 8 reps, you should in crease your resistance 5 lbs and decrease your reps to 5. Reset 60 - 120 seconds between each set and exercise. Focus on proper form. Tighten the muscle before you move, squeeze the muscle as you move, cramp the muscle as the point of full contraction, and resist the movement as you lower the weight. Move slowly on each rep, use a pace that would allow you to stop the movement instantly at any point in the rep. Counting the two seconds up th and four seconds down and work to fatigue during each set.","workout":{"days":[{"title":"1 & 3","id":"strength-training-1-3","bodyParts":[{"name":"Chest","exercises":[{"name":"Decline Bench Press","fileName":"decline-bench-press"},{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"2 - 4","reps":"5 - 8"},{"name":"Shoulders","exercises":[{"name":"Seated Shoulder Press","fileName":"should-relxion"},{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"},{"name":"Front Shoulder Raise","fileName":"scapular-retraction"}],"sets":"2 - 4","reps":"5 - 8"}]},{"title":"2 & 4","id":"strength-training-2-4","bodyParts":[{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"shoulder-extension"},{"name":"Stiff Arm Pulldowns","fileName":"stiff-arm-pulldowns"}],"sets":"2 - 4","reps":"5 - 8"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"},{"name":"Standing Wrist Curl","fileName":"wrist-curl"},{"name":"Triceps Pushdown","fileName":"triceps-pushdown"},{"name":"Triceps Extension","fileName":"tricep-extension"}],"sets":"2 - 4","reps":"5 - 8"}]},{"title":"5 & 7","id":"strength-training-5-7","bodyParts":[{"name":"Legs","exercises":[{"name":"Leg Press","fileName":"calf-raise"},{"name":"Leg Extension","fileName":"leg-extension"},{"name":"Standing Leg Kickback","fileName":"standing-leg-kickback"}],"sets":"2 - 4","reps":"5 - 8"},{"name":"Trunk","exercises":[{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"},{"name":"Trunk Rotation","fileName":"trunk-rotation"}],"sets":"2 - 4","reps":"5 - 8"}]}]}};
+
+/***/ }),
+
+/***/ "./data/programs/upper-lower-body.json":
+/*!*********************************************!*\
+  !*** ./data/programs/upper-lower-body.json ***!
+  \*********************************************/
+/*! exports provided: title, frequency, time, content, workout, default */
+/***/ (function(module) {
+
+module.exports = {"title":"20 Minute Upper/Lower Body","frequency":"4 days per week (M-T-Th-F)","time":"20 Minutes","content":"This program provides a quick and effective workout that combines muscle conditioning with some cardiovascular benefits. Perform this routine when you are limited in time or just want a variation to your normal routine. Perform this program training 2 days, resting 1 to 2. Perform all exercises to near failure, stopping at the point that your technique starts to deteriorate. Rest only 20-30 seconds between sets. As you get stronger, increase the number of sets you perform. Move slowly on each rep. use a pace that would allow you to stop the movement instantly at any point in the rep. Count three seconds up and three seconds down.","workout":{"days":[{"title":"1 & 3","id":"upper-lower-body-1-3","bodyParts":[{"name":"Chest","exercises":[{"name":"Bench Press","fileName":"bench-press-horizontal"}],"sets":"3","reps":"12 - 15"},{"name":"Back","exercises":[{"name":"Seated Lat Rows","fileName":"should-extension"}],"sets":"3","reps":"12 - 15"},{"name":"Shoulders","exercises":[{"name":"Crossover Seated Rear Deltoid Rows","fileName":"cross-over-rear-deltiod"}],"sets":"3","reps":"12 - 15"},{"name":"Arms","exercises":[{"name":"Standing Biceps Curl","fileName":"bicep-curl"},{"name":"Lying Triceps Extension","fileName":"tricep-extension"}],"sets":"3","reps":"12 - 15"}]},{"title":"2 & 4","id":"upper-lower-body-2-4","bodyParts":[{"name":"Legs","exercises":[{"name":"Leg Extension","fileName":"leg-extension"},{"name":"Leg Press","fileName":"leg-press"},{"name":"Standing Leg Kickback","fileName":"standing-leg-kickback"},{"name":"Standing Hip Abduction","fileName":"hip-abdction"}],"sets":"3","reps":"12 - 15"},{"name":"Trunk","exercises":[{"name":"Trunk Rotation","fileName":"trunk-rotation"},{"name":"Seated Abdominal Crunch","fileName":"abdominal-crunch"}],"sets":"3","reps":"12 - 15"}]}]}};
 
 /***/ }),
 
@@ -6859,21 +6983,21 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fworkout&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Fworkout.js!./":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fworkout&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Fworkout.js ***!
+  \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/workout", function() {
+      var page = __webpack_require__(/*! ./pages/workout.js */ "./pages/workout.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/workout.js */ "./pages/workout.js", function() {
+          if(!next.router.components["/workout"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/workout.js */ "./pages/workout.js")
+          next.router.update("/workout", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -12012,50 +12136,177 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/workout.js":
+/*!**************************!*\
+  !*** ./pages/workout.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/wpierce/projects/flexin-bows/pages/index.js";
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 
 
 
-var Page = function Page(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+
+
+
+
+
+
+
+
+var Page =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Page, _React$Component);
+
+  function Page(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Page);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Page).call(this, props)); // grab ID from first day workout
+
+    var activeTab = props.data.workout.days[0].id; // grab fileName of first image in workout
+
+    var image = props.data.workout.days[0].bodyParts[0].exercises[0].fileName;
+    _this.state = {
+      activeTab: activeTab,
+      image: "/static/images/exercises/edited/".concat(image, ".jpg"),
+      value: '',
+      showDesc: 1,
+      imageSize: 'small'
+    };
+    _this.onWorkoutClick = _this.onWorkoutClick.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.onBodyPartClick = _this.onBodyPartClick.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.toggleDesc = _this.toggleDesc.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.onSizeChange = _this.onSizeChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Page, [{
+    key: "toggleDesc",
+    value: function toggleDesc(event) {
+      if (this.state.showDesc) {
+        this.setState({
+          showDesc: 0
+        });
+      } else {
+        this.setState({
+          showDesc: 1
+        });
+      }
+    }
+  }, {
+    key: "onSizeChange",
+    value: function onSizeChange(event) {
+      event.preventDefault();
+
+      if (this.state.imageSize === 'large') {
+        this.setState({
+          imageSize: 'small'
+        });
+      }
+
+      if (this.state.imageSize === 'small') {
+        this.setState({
+          imageSize: 'large'
+        });
+      }
+    }
+  }, {
+    key: "onBodyPartClick",
+    value: function onBodyPartClick(event) {
+      event.preventDefault();
+      var fileName = "/static/images/exercises/edited/".concat(event.target.dataset.file, ".jpg");
+      this.setState({
+        image: fileName
+      });
+    }
+  }, {
+    key: "onWorkoutClick",
+    value: function onWorkoutClick(event) {
+      event.preventDefault();
+      var id = event.target.dataset.id;
+      this.setState({
+        activeTab: id
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        data: this.props.data,
+        activeTab: this.state.activeTab,
+        toggleDesc: this.toggleDesc,
+        showDesc: this.state.showDesc,
+        onWorkoutClick: this.onWorkoutClick,
+        onBodyPartClick: this.onBodyPartClick,
+        image: this.state.image,
+        onSizeChange: this.onSizeChange,
+        imageSize: this.state.imageSize
+      });
+    }
+  }]);
+
+  return Page;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+Page.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(res) {
+    var title, data;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            title = res.query.title;
+            data = __webpack_require__("./data/programs sync recursive ^\\.\\/.*$")("./".concat(title));
+            return _context.abrupt("return", {
+              data: data
+            });
+
+          case 3:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
   }));
-};
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
 
 /* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************/
+/***/ 2:
+/*!****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fworkout&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Fworkout.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fworkout&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Fworkout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fworkout&absolutePagePath=%2FUsers%2Fwpierce%2Fprojects%2Fflexin-bows%2Fpages%2Fworkout.js!./");
 
 
 /***/ }),
@@ -12071,5 +12322,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[2,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=workout.js.map
