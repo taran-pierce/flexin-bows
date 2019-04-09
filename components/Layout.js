@@ -51,7 +51,7 @@ const Layout = ( props) => {
         `}</style>
         <Header
           links={links}
-          onChange={props.onChange}
+          toggleDesc={props.toggleDesc}
           searchValue={props.searchvalue}
         />
         <Workout
@@ -60,7 +60,7 @@ const Layout = ( props) => {
           onWorkoutClick={props.onWorkoutClick}
           onBodyPartClick={props.onBodyPartClick}
           image={props.image}
-          onChange={props.onChange}
+          toggleDesc={props.toggleDesc}
           showDesc={props.showDesc}
           onSizeChange={props.onSizeChange}
           imageSize={props.imageSize}

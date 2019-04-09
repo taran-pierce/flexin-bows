@@ -54,7 +54,6 @@ const Header = (props) => {
               <label>Search:
                 <input
                   type={`text`}
-                  onChange={props.onChange}
                 />
               </label>
             </form>

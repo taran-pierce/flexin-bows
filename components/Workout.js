@@ -108,7 +108,7 @@ const Workout = (props) => {
         }
       `}</style>
         <h1>{data.title} 
-          <small id={`toggle-desc`} className={`close`} onClick={props.onChange}>{toggleIcon}</small>
+          <small id={`toggle-desc`} className={`close`} onClick={props.toggleDesc}>{toggleIcon}</small>
           <small id={`toggle-size`} className={`close`} onClick={props.onSizeChange}>{sizeIcon}</small>
         </h1>
         <div className={`workout-content`}>
