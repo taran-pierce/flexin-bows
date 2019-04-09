@@ -12,6 +12,8 @@ The booklet sucks, look through this instead to get your work out on.
 * `cd flexin-bows`
 * `npm install`
 * `npm run dev`
+* Export static HTML: `npm run build` then `npm run export`
+  * creates static export of site in `/out`
 
 ### Directory structure:
 
