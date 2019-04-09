@@ -1,8 +1,8 @@
 {
   "name": "flexin-bows",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The booklet sucks, look through this instead to get your work out on.",
-  "main": "gulpfile.js",
+  "main": "pages/index.js",
   "dependencies": {
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",

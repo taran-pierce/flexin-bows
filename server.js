@@ -10,7 +10,7 @@ app
   .then( () => {
     const server = express()
 
-    server.get('/workouts/:title', (req, res) => {
+    server.get('/:title', (req, res) => {
       const actualPage = '/workout'
       const queryParams = { title: req.params.title }
       app.render( req, res, actualPage, queryParams )
