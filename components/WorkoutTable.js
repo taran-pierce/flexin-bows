@@ -15,13 +15,21 @@ const WorkoutTable = (props) => {
          }
          
          td, th {
-           padding: .5rem 1rem;
+           padding: .2rem 1rem;
            border-right: 1px solid black;
            border-bottom: 1px solid black;
          }
          
          th {
            border-bottom-width: 2px;
+         }
+
+         p {
+           margin: 0;
+         }
+
+         a {
+           display: block;
          }
          
          th:last-child,

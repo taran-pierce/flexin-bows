@@ -1,17 +1,19 @@
-# flexin-bows
+# flexin-bows `3.0.0`
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features
-* 1 workout routines for the BowFlex with an image for demonstration
+* All workout routines for the BowFlex with an image for demonstration
 
 ### Future updates
-* The remaining 7 workout routines
+* Better styling for errrythang
 
 ### Setup
 * `git clone https://github.com/taran-pierce/flexin-bows.git`
 * `cd flexin-bows`
 * `npm install`
 * `npm run dev`
+* Export static HTML: `npm run build` then `npm run export`
+  * creates static export of site in `/out`
 
 ### Directory structure:
 
@@ -32,8 +34,12 @@ The booklet sucks, look through this instead to get your work out on.
   |  |-/programs
   |  |  |
   |  |  |-better-body.json
+  |
+  |-/pages
+  |  |-index
+  |  |-workout
   |  
-  |-/dist
+  |-/out
   |
   |-/static/
   |  |

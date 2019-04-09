@@ -42,12 +42,16 @@ const Layout = ( props) => {
             background: url('/static/images/body-bg.png') top left repeat;
             margin: 0;
             padding: 0;
-            font-family: Helvetica, sans-serif;
+            font-family: 'Noto Sans JP', Helvetica, sans-serif;
+          }
+
+          .hidden {
+            display: none;
           }
         `}</style>
         <Header
           links={links}
-          onChange={props.onChange}
+          toggleDesc={props.toggleDesc}
           searchValue={props.searchvalue}
         />
         <Workout
@@ -56,6 +60,10 @@ const Layout = ( props) => {
           onWorkoutClick={props.onWorkoutClick}
           onBodyPartClick={props.onBodyPartClick}
           image={props.image}
+          toggleDesc={props.toggleDesc}
+          showDesc={props.showDesc}
+          onSizeChange={props.onSizeChange}
+          imageSize={props.imageSize}
         />
       </div>
     )
@@ -67,7 +75,11 @@ const Layout = ( props) => {
             background: url('/static/images/body-bg.png') top left repeat;
             margin: 0;
             padding: 0;
-            font-family: Helvetica, sans-serif;
+            font-family: 'Noto Sans JP', Helvetica, sans-serif;
+          }
+
+          .hidden {
+            display: none;
           }
         `}</style>
         <Header links={links} />
