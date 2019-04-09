@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# flexin-bows `3.1.1`
+=======
 # flexin-bows `3.0.0`
+>>>>>>> origin/master
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features
