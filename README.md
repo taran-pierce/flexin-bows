@@ -1,4 +1,4 @@
-# flexin-bows `3.1.1`
+# flexin-bows `3.1.2`
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features

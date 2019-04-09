@@ -1,10 +1,6 @@
 {
   "name": "flexin-bows",
-<<<<<<< HEAD
-  "version": "3.1.1",
-=======
-  "version": "3.1.0",
->>>>>>> origin/master
+  "version": "3.1.2",
   "description": "The booklet sucks, look through this instead to get your work out on.",
   "main": "pages/index.js",
   "dependencies": {
