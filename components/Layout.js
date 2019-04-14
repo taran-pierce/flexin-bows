@@ -83,7 +83,6 @@ const Layout = ( props) => {
           }
         `}</style>
         <Header links={links} />
-        <p>testing updates</p>
         <WorkoutList links={links} />
       </div>
     )

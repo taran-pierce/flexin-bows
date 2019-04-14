@@ -1,4 +1,4 @@
-# flexin-bows `3.1.2`
+# flexin-bows `3.3.3`
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features
@@ -14,6 +14,7 @@ The booklet sucks, look through this instead to get your work out on.
 * `npm run dev`
 * Export static HTML: `npm run build` then `npm run export`
   * creates static export of site in `/out`
+* `npm run workingDir`: shows working directory, helpful when debugging CICD
 
 ### Directory structure:
 
