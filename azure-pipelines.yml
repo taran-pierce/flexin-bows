@@ -14,12 +14,13 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: PublishBuildArtifacts@1
-  inputs:
-    ArtifactName: 'build'
 
 - script: |
     npm install
     npm run build
     npm run export
   displayName: 'npm install then build and export'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    ArtifactName: 'build'
