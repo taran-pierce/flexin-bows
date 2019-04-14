@@ -25,7 +25,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'e795ce5d-6452-4fce-bafc-3ae1870485df'
-    sourceFolder: '/home/vsts/work/1/s/.next'
+    sourceFolder: '/home/vsts/work/1/s/out/'
     targetFolder: '/home2/hpier/flexinbows.taranitup.club/flexin-bows/out'
     cleanTargetFolder: true
 
