@@ -22,6 +22,11 @@ steps:
     npm run workingDir
   displayName: 'npm install then build and export'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '/home/vsts/work/1/s/out/'
+    ArtifactName: 'build'
+
 - task: DownloadBuildArtifacts@0
   inputs:
     artifactName: 'build'
