@@ -49,15 +49,6 @@ const Header = (props) => {
               <a>Flexin Bows with Terry</a>
             </Link>
           </li>
-          <li className={`search-box hidden`}>
-            <form>
-              <label>Search:
-                <input
-                  type={`text`}
-                />
-              </label>
-            </form>
-          </li>
         </ul>
       </nav>
     </header>
