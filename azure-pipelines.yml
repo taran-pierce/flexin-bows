@@ -23,4 +23,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    ArtifactName: 'build'
+    PathtoPublish: '/home/vsts/work/1/s/.next'
+    ArtifactName: 'build-test'
+    ArtifactType: 'FilePath'
+    TargetPath: '/home/vsts/work/1/s/.next'
