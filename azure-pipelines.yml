@@ -14,6 +14,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'e795ce5d-6452-4fce-bafc-3ae1870485df'
+    runOptions: 'commands'
+    commands: 'git add out/ && git commit -m "building project" && git push origin master' 
 
 - script: |
     npm install
