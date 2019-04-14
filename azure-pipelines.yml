@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+- production
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -14,9 +14,17 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '/'
 
 - script: 
-    npm install
     npm run build
     npm run export
   displayName: 'npm install and build then export'
+
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'artifact-build'
+    targetPath: '/home/vsts/work/1/s/.next'
