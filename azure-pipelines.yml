@@ -21,18 +21,13 @@ steps:
     npm run export
   displayName: 'npm install then build and export'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '/home/vsts/work/1/s/.next'
-    ArtifactName: 'build-test'
-    ArtifactType: 'FilePath'
-    TargetPath: '/home/vsts/work/1/s/.next'
-
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'e795ce5d-6452-4fce-bafc-3ae1870485df'
     sourceFolder: '/home/vsts/work/1/s/.next'
     targetFolder: '/home2/hpier/flexinbows.taranitup.club/testing'
     cleanTargetFolder: true
+
+  
 
 
