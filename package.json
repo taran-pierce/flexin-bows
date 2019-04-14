@@ -22,7 +22,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "test": "jest",
-    "export": "next export"
+    "export": "next export",
+    "workingDir": "pwd && ls"
   },
   "repository": {
     "type": "git",
