@@ -1,6 +1,6 @@
 {
   "name": "flexin-bows",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "The booklet sucks, look through this instead to get your work out on.",
   "main": "pages/index.js",
   "dependencies": {
