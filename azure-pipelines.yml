@@ -21,6 +21,13 @@ steps:
     npm run export
   displayName: 'npm install then build and export'
 
+- task: CmdLine@2
+  inputs:
+    script: 'echo ''pwd''
+pwd
+
+echo Use the environment variables input below to pass secret variables to this script'
+
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'e795ce5d-6452-4fce-bafc-3ae1870485df'
