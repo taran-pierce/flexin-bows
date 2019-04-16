@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+- production
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -21,15 +21,6 @@ steps:
     npm run export
     npm run workingDir
   displayName: 'npm install then build and export'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '/home/vsts/work/1/s/out/'
-    ArtifactName: 'build'
-
-- task: DownloadBuildArtifacts@0
-  inputs:
-    artifactName: 'build'
 
   
 
