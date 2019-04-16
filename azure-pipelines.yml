@@ -24,7 +24,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'echo ''cd /home/vsts/work/1/s && git status
+    script: 'echo "cd /home/vsts/work/1/s && git status"'
 cd /home/vsts/work/1/s && git status
 echo Use the environment variables input below to pass secret variables to this script'
 
