@@ -12,32 +12,10 @@ exports[`Does WorkoutTable render correctly? 1`] = `
     >
       <a
         className="jsx-92330898"
-        data-id="better-body-1-3"
+        data-id="better-body-M-W-F"
         href="#"
       >
-        1 & 3
-      </a>
-    </li>
-    <li
-      className="jsx-92330898"
-    >
-      <a
-        className="jsx-92330898"
-        data-id="better-body-2-4"
-        href="#"
-      >
-        2 & 4
-      </a>
-    </li>
-    <li
-      className="jsx-92330898"
-    >
-      <a
-        className="jsx-92330898"
-        data-id="better-body-5-7"
-        href="#"
-      >
-        5 & 7
+        M-W-F
       </a>
     </li>
   </ul>

@@ -3,38 +3,21 @@
 exports[`Does Header render correctly? 1`] = `
 <header>
   <nav
-    className="jsx-3182432235"
+    className="jsx-2828623846"
   >
     <ul
-      className="jsx-3182432235"
+      className="jsx-2828623846"
     >
       <li
-        className="jsx-3182432235"
+        className="jsx-2828623846"
       >
         <a
-          className="jsx-3182432235"
+          className="jsx-2828623846"
           href="/"
           onClick={[Function]}
         >
           Flexin Bows with Terry
         </a>
-      </li>
-      <li
-        className="jsx-3182432235 search-box"
-      >
-        <form
-          className="jsx-3182432235"
-        >
-          <label
-            className="jsx-3182432235"
-          >
-            Search:
-            <input
-              className="jsx-3182432235"
-              type="text"
-            />
-          </label>
-        </form>
       </li>
     </ul>
   </nav>

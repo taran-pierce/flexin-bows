@@ -3,6 +3,7 @@ const ImageCard = (props) => {
     <div>
       <style jsx>{`
         img {
+          border: 1px solid rgba(0,0,0,.6);
           max-width: 100%;
         }
       `}</style>

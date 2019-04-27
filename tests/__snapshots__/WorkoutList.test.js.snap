@@ -1,58 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Does WorkoutList render correctly? 1`] = `
-<div>
-  <ul>
-    <li>
+<div
+  className="jsx-2211515642 list-container"
+>
+  <ul
+    className="jsx-2211515642"
+  >
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/better-body"
         onClick={[Function]}
       >
         Better Body
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/advanced-conditioning"
         onClick={[Function]}
       >
         Advanced Conditioning
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/body-building"
         onClick={[Function]}
       >
         Body Building
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/strength-training"
         onClick={[Function]}
       >
         Strength Training
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/aerobic"
         onClick={[Function]}
       >
         Aerobic
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/upper-lower-body"
         onClick={[Function]}
       >
         Upper Lower Body
       </a>
     </li>
-    <li>
+    <li
+      className="jsx-2211515642"
+    >
       <a
+        className="jsx-2211515642"
         href="/anaerobic"
         onClick={[Function]}
       >

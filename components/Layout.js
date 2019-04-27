@@ -63,7 +63,9 @@ const Layout = ( props) => {
           toggleDesc={props.toggleDesc}
           showDesc={props.showDesc}
           onSizeChange={props.onSizeChange}
+          onTableSizeChange={props.onTableSizeChange}
           imageSize={props.imageSize}
+          tableSize={props.tableSize}
         />
       </div>
     )

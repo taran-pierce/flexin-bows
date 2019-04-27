@@ -2,11 +2,11 @@
 
 exports[`Does ImageCard render correctly? 1`] = `
 <div
-  className="jsx-1672659235"
+  className="jsx-776312227"
 >
   <img
     alt="get it done"
-    className="jsx-1672659235"
+    className="jsx-776312227"
     src="https://placekitten.com/200/300"
   />
 </div>

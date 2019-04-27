@@ -1,24 +1,26 @@
 import WorkoutTable from './WorkoutTable'
 import ImageCard from './ImageCard'
 
-const Workout = (props) => {
+const Workout = ( props ) => {
   const data = props.data
   const plans = props.data.workout
 
   let toggleIcon = '(Show Description)'
 
-  if (props.showDesc) {
+  if ( props.showDesc ) {
     toggleIcon = '(Hide Description)'
   }
 
   let sizeIcon = '(Smaller Image)'
 
-  if (props.imageSize === 'small') {
+  if ( props.imageSize === 'small' ) {
     sizeIcon = '(Larger Image)'
   }
 
-  if (props.imageSize === 'large') {
-    sizeIcon = '(Smaller Image)'
+  let tableIcon = '(Smaller Table)'
+
+  if ( props.tableSize === 'small' ) {
+    tableIcon = '(Larger Table)'
   }
   
   return (
@@ -81,11 +83,13 @@ const Workout = (props) => {
           transition: opacity .5s ease-in-out,
                       max-height .5s ease-in-out,
                       box-shadow .5s ease-in-out,
-                      padding .5s ease-in-out;
+                      padding .5s ease-in-out,
+                      visibility .5s ease-in-out;
           opacity: 0;
           padding: 0 1rem;
           margin: 0 0 1rem;
           max-height: 0;
+          visibility: hidden;
         }
 
         small {
@@ -101,6 +105,7 @@ const Workout = (props) => {
           opacity: 1;
           padding: 1rem;
           max-height: 600px;
+          visibility: visible;
         }
 
         .workout.active h1 {
@@ -110,6 +115,7 @@ const Workout = (props) => {
         <h1>{data.title} 
           <small id={`toggle-desc`} className={`close`} onClick={props.toggleDesc}>{toggleIcon}</small>
           <small id={`toggle-size`} className={`close`} onClick={props.onSizeChange}>{sizeIcon}</small>
+          <small id={`toggle-table-size`} className={`close`} onClick={props.onTableSizeChange}>{tableIcon}</small>
         </h1>
         <div className={`workout-content`}>
           <p><strong>Frequency: </strong>{data.frequency}</p>
@@ -123,6 +129,7 @@ const Workout = (props) => {
             activeTab={props.activeTab}
             onWorkoutClick={props.onWorkoutClick}
             onBodyPartClick={props.onBodyPartClick}
+            tableSize={props.tableSize}
           />
         </div>
         <div className={`flex-item image`}>

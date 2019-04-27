@@ -26,6 +26,12 @@ const WorkoutList = (props) => {
           box-shadow: 0 2px 2px rgba(0,0,0,.3);
           margin: .5rem;
           flex-grow: 1;
+          transition: all .5s ease-in-out;
+        }
+        li:hover {
+          background: rgba(255,255,255,.5);
+          border-color: rgba(0,0,0,.5);
+          box-shadow: 0 3px 4px rgba(0,0,0,.5);
         }
 
         a {
@@ -34,6 +40,11 @@ const WorkoutList = (props) => {
           font-weight: 700;
           padding: 2rem 6rem;
           text-decoration: none;
+          transition: all .5s ease-in-out;
+        }
+        a:hover,
+        a:focus {
+          color: #222;
         }
       `}</style>
       <ul>

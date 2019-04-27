@@ -16,13 +16,15 @@ class Page extends React.Component {
       image: `/static/images/exercises/edited/${image}.jpg`,
       value: '',
       showDesc: 1,
-      imageSize: 'small'
+      imageSize: 'small',
+      tableSize: 'large',
     }
   
     this.onWorkoutClick = this.onWorkoutClick.bind(this)
     this.onBodyPartClick = this.onBodyPartClick.bind(this)
     this.toggleDesc = this.toggleDesc.bind(this)
     this.onSizeChange = this.onSizeChange.bind(this)
+    this.onTableSizeChange = this.onTableSizeChange.bind(this)
   }
   
   toggleDesc( event ) {
@@ -38,14 +40,24 @@ class Page extends React.Component {
 
     if (this.state.imageSize === 'large') {
       this.setState({ imageSize: 'small' })
-    } 
-    if (this.state.imageSize === 'small') {
+    } else {
       this.setState({ imageSize: 'large' })
+    }
+  }
+
+  onTableSizeChange( event ) {
+    event.preventDefault()
+
+    if (this.state.tableSize === 'large') {
+      this.setState({ tableSize: 'small' })
+    } else {
+      this.setState({ tableSize: 'large' })
     }
   }
   
   onBodyPartClick( event ) {
     event.preventDefault()
+
     const fileName = `/static/images/exercises/edited/${event.target.dataset.file}.jpg`
     
     this.setState({ image: fileName })
@@ -53,6 +65,7 @@ class Page extends React.Component {
   
   onWorkoutClick( event ) {
     event.preventDefault()
+
     const id = event.target.dataset.id
     
     this.setState({ activeTab: id })
@@ -69,7 +82,9 @@ class Page extends React.Component {
         onBodyPartClick={this.onBodyPartClick}
         image={this.state.image}
         onSizeChange={this.onSizeChange}
+        onTableSizeChange={this.onTableSizeChange}
         imageSize={this.state.imageSize}
+        tableSize={this.state.tableSize}
       />
     )
   }
