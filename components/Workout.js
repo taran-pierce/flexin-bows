@@ -1,24 +1,26 @@
 import WorkoutTable from './WorkoutTable'
 import ImageCard from './ImageCard'
 
-const Workout = (props) => {
+const Workout = ( props ) => {
   const data = props.data
   const plans = props.data.workout
 
   let toggleIcon = '(Show Description)'
 
-  if (props.showDesc) {
+  if ( props.showDesc ) {
     toggleIcon = '(Hide Description)'
   }
 
   let sizeIcon = '(Smaller Image)'
 
-  if (props.imageSize === 'small') {
+  if ( props.imageSize === 'small' ) {
     sizeIcon = '(Larger Image)'
   }
 
-  if (props.imageSize === 'large') {
-    sizeIcon = '(Smaller Image)'
+  let tableIcon = '(Smaller Table)'
+
+  if ( props.tableSize === 'small' ) {
+    tableIcon = '(Larger Table)'
   }
   
   return (
@@ -113,6 +115,7 @@ const Workout = (props) => {
         <h1>{data.title} 
           <small id={`toggle-desc`} className={`close`} onClick={props.toggleDesc}>{toggleIcon}</small>
           <small id={`toggle-size`} className={`close`} onClick={props.onSizeChange}>{sizeIcon}</small>
+          <small id={`toggle-table-size`} className={`close`} onClick={props.onTableSizeChange}>{tableIcon}</small>
         </h1>
         <div className={`workout-content`}>
           <p><strong>Frequency: </strong>{data.frequency}</p>
@@ -126,6 +129,7 @@ const Workout = (props) => {
             activeTab={props.activeTab}
             onWorkoutClick={props.onWorkoutClick}
             onBodyPartClick={props.onBodyPartClick}
+            tableSize={props.tableSize}
           />
         </div>
         <div className={`flex-item image`}>

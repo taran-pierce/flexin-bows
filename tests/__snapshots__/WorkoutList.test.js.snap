@@ -2,16 +2,16 @@
 
 exports[`Does WorkoutList render correctly? 1`] = `
 <div
-  className="jsx-3535744145 list-container"
+  className="jsx-2211515642 list-container"
 >
   <ul
-    className="jsx-3535744145"
+    className="jsx-2211515642"
   >
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/better-body"
         onClick={[Function]}
       >
@@ -19,10 +19,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/advanced-conditioning"
         onClick={[Function]}
       >
@@ -30,10 +30,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/body-building"
         onClick={[Function]}
       >
@@ -41,10 +41,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/strength-training"
         onClick={[Function]}
       >
@@ -52,10 +52,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/aerobic"
         onClick={[Function]}
       >
@@ -63,10 +63,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/upper-lower-body"
         onClick={[Function]}
       >
@@ -74,10 +74,10 @@ exports[`Does WorkoutList render correctly? 1`] = `
       </a>
     </li>
     <li
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <a
-        className="jsx-3535744145"
+        className="jsx-2211515642"
         href="/anaerobic"
         onClick={[Function]}
       >

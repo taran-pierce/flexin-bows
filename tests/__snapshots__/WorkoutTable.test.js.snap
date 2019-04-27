@@ -2,7 +2,7 @@
 
 exports[`Does WorkoutTable render correctly? 1`] = `
 <div
-  className="jsx-2306742958 workout-table"
+  className="jsx-1390947089 workout-table"
 >
   <div
     className="jsx-92330898"
@@ -23,278 +23,282 @@ exports[`Does WorkoutTable render correctly? 1`] = `
       </li>
     </ul>
   </div>
-  <table
-    className="jsx-2306742958 hidden"
+  <div
+    className="jsx-1390947089 "
   >
-    <thead
-      className="jsx-2306742958"
+    <table
+      className="jsx-1390947089 hidden"
     >
-      <tr
-        className="jsx-2306742958"
+      <thead
+        className="jsx-1390947089"
       >
-        <th
-          className="jsx-2306742958"
+        <tr
+          className="jsx-1390947089"
         >
-          Body Part
-        </th>
-        <th
-          className="jsx-2306742958"
-        >
-          Exercise
-        </th>
-        <th
-          className="jsx-2306742958"
-        >
-          Sets
-        </th>
-        <th
-          className="jsx-2306742958"
-        >
-          Reps
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      className="jsx-2306742958"
-    >
-      <tr
-        className="jsx-2306742958"
+          <th
+            className="jsx-1390947089"
+          >
+            Body Part
+          </th>
+          <th
+            className="jsx-1390947089"
+          >
+            Exercise
+          </th>
+          <th
+            className="jsx-1390947089"
+          >
+            Sets
+          </th>
+          <th
+            className="jsx-1390947089"
+          >
+            Reps
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="jsx-1390947089"
       >
-        <td
-          className="jsx-2306742958"
+        <tr
+          className="jsx-1390947089"
         >
-          Chest
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="bench-press-horizontal"
-              href="#"
-            >
-              Bench Press
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          10 - 15
-        </td>
-      </tr>
-      <tr
-        className="jsx-2306742958"
-      >
-        <td
-          className="jsx-2306742958"
-        >
-          Back
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+            Chest
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="shoulder-extension"
-              href="#"
+            <p
+              className="jsx-1390947089"
             >
-              Seated Lat Rows
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          10 - 15
-        </td>
-      </tr>
-      <tr
-        className="jsx-2306742958"
-      >
-        <td
-          className="jsx-2306742958"
-        >
-          Shoulders
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+              <a
+                className="jsx-1390947089"
+                data-file="bench-press-horizontal"
+                href="#"
+              >
+                Bench Press
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="cross-over-rear-deltiod"
-              href="#"
-            >
-              Crossover Seated Rear Deltoid Rows
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          10 - 15
-        </td>
-      </tr>
-      <tr
-        className="jsx-2306742958"
-      >
-        <td
-          className="jsx-2306742958"
-        >
-          Arms
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="bicep-curl"
-              href="#"
-            >
-              Standing Biceps Curl
-            </a>
-          </p>
-          <p
-            className="jsx-2306742958"
+            10 - 15
+          </td>
+        </tr>
+        <tr
+          className="jsx-1390947089"
+        >
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="triceps-pushdown"
-              href="#"
-            >
-              Triceps Pushdown
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          10 - 15
-        </td>
-      </tr>
-      <tr
-        className="jsx-2306742958"
-      >
-        <td
-          className="jsx-2306742958"
-        >
-          Legs
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+            Back
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="calf-raise"
-              href="#"
+            <p
+              className="jsx-1390947089"
             >
-              Calf Raise
-            </a>
-          </p>
-          <p
-            className="jsx-2306742958"
+              <a
+                className="jsx-1390947089"
+                data-file="shoulder-extension"
+                href="#"
+              >
+                Seated Lat Rows
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="leg-press"
-              href="#"
-            >
-              Leg Press
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          10 - 15
-        </td>
-      </tr>
-      <tr
-        className="jsx-2306742958"
-      >
-        <td
-          className="jsx-2306742958"
-        >
-          Trunk
-        </td>
-        <td
-          className="jsx-2306742958"
-        >
-          <p
-            className="jsx-2306742958"
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="trunk-rotation"
-              href="#"
-            >
-              Trunk Rotation
-            </a>
-          </p>
-          <p
-            className="jsx-2306742958"
+            10 - 15
+          </td>
+        </tr>
+        <tr
+          className="jsx-1390947089"
+        >
+          <td
+            className="jsx-1390947089"
           >
-            <a
-              className="jsx-2306742958"
-              data-file="abdominal-crunch"
-              href="#"
+            Shoulders
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            <p
+              className="jsx-1390947089"
             >
-              Seated Abdominal Crunch
-            </a>
-          </p>
-        </td>
-        <td
-          className="jsx-2306742958"
+              <a
+                className="jsx-1390947089"
+                data-file="cross-over-rear-deltiod"
+                href="#"
+              >
+                Crossover Seated Rear Deltoid Rows
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            10 - 15
+          </td>
+        </tr>
+        <tr
+          className="jsx-1390947089"
         >
-          1 - 2
-        </td>
-        <td
-          className="jsx-2306742958"
+          <td
+            className="jsx-1390947089"
+          >
+            Arms
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="bicep-curl"
+                href="#"
+              >
+                Standing Biceps Curl
+              </a>
+            </p>
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="triceps-pushdown"
+                href="#"
+              >
+                Triceps Pushdown
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            10 - 15
+          </td>
+        </tr>
+        <tr
+          className="jsx-1390947089"
         >
-          10 - 15
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          <td
+            className="jsx-1390947089"
+          >
+            Legs
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="calf-raise"
+                href="#"
+              >
+                Calf Raise
+              </a>
+            </p>
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="leg-press"
+                href="#"
+              >
+                Leg Press
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            10 - 15
+          </td>
+        </tr>
+        <tr
+          className="jsx-1390947089"
+        >
+          <td
+            className="jsx-1390947089"
+          >
+            Trunk
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="trunk-rotation"
+                href="#"
+              >
+                Trunk Rotation
+              </a>
+            </p>
+            <p
+              className="jsx-1390947089"
+            >
+              <a
+                className="jsx-1390947089"
+                data-file="abdominal-crunch"
+                href="#"
+              >
+                Seated Abdominal Crunch
+              </a>
+            </p>
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            1 - 2
+          </td>
+          <td
+            className="jsx-1390947089"
+          >
+            10 - 15
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 `;

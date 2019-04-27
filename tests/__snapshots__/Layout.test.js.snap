@@ -6,16 +6,16 @@ exports[`Does Layout render correctly? 1`] = `
 >
   <header>
     <nav
-      className="jsx-2912526667"
+      className="jsx-2828623846"
     >
       <ul
-        className="jsx-2912526667"
+        className="jsx-2828623846"
       >
         <li
-          className="jsx-2912526667"
+          className="jsx-2828623846"
         >
           <a
-            className="jsx-2912526667"
+            className="jsx-2828623846"
             href="/"
             onClick={[Function]}
           >
@@ -26,16 +26,16 @@ exports[`Does Layout render correctly? 1`] = `
     </nav>
   </header>
   <div
-    className="jsx-3535744145 list-container"
+    className="jsx-2211515642 list-container"
   >
     <ul
-      className="jsx-3535744145"
+      className="jsx-2211515642"
     >
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/better-body"
           onClick={[Function]}
         >
@@ -43,10 +43,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/advanced-conditioning"
           onClick={[Function]}
         >
@@ -54,10 +54,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/body-building"
           onClick={[Function]}
         >
@@ -65,10 +65,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/strength-training"
           onClick={[Function]}
         >
@@ -76,10 +76,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/aerobic"
           onClick={[Function]}
         >
@@ -87,10 +87,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/upper-lower-body"
           onClick={[Function]}
         >
@@ -98,10 +98,10 @@ exports[`Does Layout render correctly? 1`] = `
         </a>
       </li>
       <li
-        className="jsx-3535744145"
+        className="jsx-2211515642"
       >
         <a
-          className="jsx-3535744145"
+          className="jsx-2211515642"
           href="/anaerobic"
           onClick={[Function]}
         >

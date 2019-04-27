@@ -20,6 +20,13 @@ const WorkoutTable = (props) => {
            border-bottom: 1px solid black;
          }
          
+         .small-layout td:last-child,
+         .small-layout th:last-child,
+         .small-layout th:nth-child(3),
+         .small-layout td:nth-child(3) {
+           display: none;
+         }
+         
          th {
            border-bottom-width: 2px;
          }
@@ -47,37 +54,38 @@ const WorkoutTable = (props) => {
          }
       `}</style>
       {props.plans.days.map( (day) => (
-        <table
-          key={day.id}
-          className={day.id !== props.activeTab ? 'hidden' : 'active' }>
-          <thead>
-            <tr>
-              <th>Body Part</th>
-              <th>Exercise</th>
-              <th>Sets</th>
-              <th>Reps</th>
-            </tr>
-          </thead>
-          <tbody>
-            {day.bodyParts.map( (part) => (
-              <tr key={part.name}>
-                <td>{part.name}</td>
-                <td>
-                  {part.exercises.map( (workout) => (
-                    <p key={workout.name}>
-                      <a
-                        href={`#`}
-                        onClick={props.onBodyPartClick}
-                        data-file={workout.fileName}>{workout.name}</a>
-                    </p>
-                  ))}
-                </td>
-                <td>{part.sets}</td>
-                <td>{part.reps}</td>
+        <div key={day.id}
+             className={props.tableSize === 'small' ? 'small-layout' : ''}>
+          <table className={day.id !== props.activeTab ? 'hidden' : 'active' }>
+            <thead>
+              <tr>
+                <th>Body Part</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {day.bodyParts.map( (part) => (
+                <tr key={part.name}>
+                  <td>{part.name}</td>
+                  <td>
+                    {part.exercises.map( (workout) => (
+                      <p key={workout.name}>
+                        <a
+                          href={`#`}
+                          onClick={props.onBodyPartClick}
+                          data-file={workout.fileName}>{workout.name}</a>
+                      </p>
+                    ))}
+                  </td>
+                  <td>{part.sets}</td>
+                  <td>{part.reps}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ))}
     </div>
   )
