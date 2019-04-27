@@ -81,11 +81,13 @@ const Workout = (props) => {
           transition: opacity .5s ease-in-out,
                       max-height .5s ease-in-out,
                       box-shadow .5s ease-in-out,
-                      padding .5s ease-in-out;
+                      padding .5s ease-in-out,
+                      visibility .5s ease-in-out;
           opacity: 0;
           padding: 0 1rem;
           margin: 0 0 1rem;
           max-height: 0;
+          visibility: hidden;
         }
 
         small {
@@ -101,6 +103,7 @@ const Workout = (props) => {
           opacity: 1;
           padding: 1rem;
           max-height: 600px;
+          visibility: visible;
         }
 
         .workout.active h1 {

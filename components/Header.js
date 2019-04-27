@@ -38,10 +38,6 @@ const Header = (props) => {
             text-shadow: -1px -1px 0 rgba(0,0,0,.6);
             letter-spacing: 3px;
           }
-          
-          .search-box {
-            text-align: right;
-          }
         `}</style>
         <ul>
           <li>

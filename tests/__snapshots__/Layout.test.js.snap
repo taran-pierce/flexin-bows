@@ -2,98 +2,106 @@
 
 exports[`Does Layout render correctly? 1`] = `
 <div
-  className="jsx-940123235 main-layout"
+  className="jsx-1844103835 main-layout"
 >
   <header>
     <nav
-      className="jsx-3182432235"
+      className="jsx-2912526667"
     >
       <ul
-        className="jsx-3182432235"
+        className="jsx-2912526667"
       >
         <li
-          className="jsx-3182432235"
+          className="jsx-2912526667"
         >
           <a
-            className="jsx-3182432235"
+            className="jsx-2912526667"
             href="/"
             onClick={[Function]}
           >
             Flexin Bows with Terry
           </a>
         </li>
-        <li
-          className="jsx-3182432235 search-box"
-        >
-          <form
-            className="jsx-3182432235"
-          >
-            <label
-              className="jsx-3182432235"
-            >
-              Search:
-              <input
-                className="jsx-3182432235"
-                type="text"
-              />
-            </label>
-          </form>
-        </li>
       </ul>
     </nav>
   </header>
-  <div>
-    <ul>
-      <li>
+  <div
+    className="jsx-3535744145 list-container"
+  >
+    <ul
+      className="jsx-3535744145"
+    >
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/better-body"
           onClick={[Function]}
         >
           Better Body
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/advanced-conditioning"
           onClick={[Function]}
         >
           Advanced Conditioning
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/body-building"
           onClick={[Function]}
         >
           Body Building
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/strength-training"
           onClick={[Function]}
         >
           Strength Training
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/aerobic"
           onClick={[Function]}
         >
           Aerobic
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/upper-lower-body"
           onClick={[Function]}
         >
           Upper Lower Body
         </a>
       </li>
-      <li>
+      <li
+        className="jsx-3535744145"
+      >
         <a
+          className="jsx-3535744145"
           href="/anaerobic"
           onClick={[Function]}
         >
