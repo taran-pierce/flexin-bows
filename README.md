@@ -1,8 +1,9 @@
-# flexin-bows `3.3.3`
+# flexin-bows `3.4.3`
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features
 * All workout routines for the BowFlex with an image for demonstration
+* Created build and deployment pipeline in Azure
 
 ### Future updates
 * Better styling for errrythang
