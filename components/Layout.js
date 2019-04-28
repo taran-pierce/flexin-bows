@@ -53,6 +53,7 @@ const Layout = ( props ) => {
           links={links}
           toggleDesc={props.toggleDesc}
           searchValue={props.searchvalue}
+          title={`Flexin Bows`}
         />
         <Workout
           data={props.data}
@@ -84,7 +85,7 @@ const Layout = ( props ) => {
             display: none;
           }
         `}</style>
-        <Header links={links} />
+        <Header links={links} title={`Flexin Bows`} />
         <WorkoutList links={links} />
       </div>
     )

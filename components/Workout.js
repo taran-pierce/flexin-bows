@@ -1,6 +1,7 @@
 import WorkoutTable from './WorkoutTable'
 import ImageCard from './ImageCard'
 import PropTypes from 'prop-types'
+import FontAwesome from 'react-fontawesome'
 
 const Workout = ( props ) => {
   const data = props.data
@@ -113,10 +114,28 @@ const Workout = ( props ) => {
           box-shadow: none;
         }
       `}</style>
-      <h1>{data.title} 
-        <small id={'toggle-desc'} className={'close'} onClick={props.toggleDesc}>{toggleIcon}</small>
-        <small id={'toggle-size'} className={'close'} onClick={props.onSizeChange}>{sizeIcon}</small>
-        <small id={'toggle-table-size'} className={'close'} onClick={props.onTableSizeChange}>{tableIcon}</small>
+      <h1>{data.title}
+        <span className='close' onClick={props.toggleDesc}>
+          <FontAwesome
+            name='angle-double-down'
+            size='1x'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+          />
+        </span>
+        <span className='close' onClick={props.onTableSizeChange}>
+          <FontAwesome
+            name='braille'
+            size='1x'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+          />
+        </span>  
+        <span className='close' onClick={props.onSizeChange}>
+          <FontAwesome
+            name='tablet'
+            size='1x'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+          />
+        </span> 
       </h1>
       <div className={'workout-content'}>
         <p><strong>Frequency: </strong>{data.frequency}</p>

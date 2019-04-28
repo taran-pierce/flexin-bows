@@ -2,15 +2,16 @@ import Head from 'next/head'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-const Header = (props) => {
+const Header = ( props ) => {
   
   return (
     <header>
       <Head>
-        <title>{props.title ? props.title : 'Flexin Bows'}</title>
+        <title>{props.title}</title>
         <meta name='viewport' content='width=device-width, initial-scale: 1' />
         <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'></link>
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,700' rel='stylesheet'></link>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
       </Head>
       <nav>
         <style jsx>{`
