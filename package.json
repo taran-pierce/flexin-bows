@@ -1,12 +1,13 @@
 {
   "name": "flexin-bows",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "description": "The booklet sucks, look through this instead to get your work out on.",
   "main": "pages/index.js",
   "dependencies": {
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.3",
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
@@ -14,6 +15,8 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
     "jest": "^24.1.0",
     "react-test-renderer": "^16.8.3"
   },

@@ -1,8 +1,8 @@
-import Workout from "./Workout";
-import Header from "./Header";
+import Workout from './Workout'
+import Header from './Header'
 import WorkoutList from './WorkoutList'
 
-const Layout = ( props) => {
+const Layout = ( props ) => {
   const links = [
     {
       name: 'Better Body',
@@ -34,9 +34,9 @@ const Layout = ( props) => {
     }
   ]
   
-  if (props.data) {
+  if ( props.data ) {
     return (
-      <div className={`main-layout`}>
+      <div className={'main-layout'}>
         <style jsx global>{`
           body {
             background: url('/static/images/body-bg.png') top left repeat;
@@ -71,7 +71,7 @@ const Layout = ( props) => {
     )
   } else {
     return (
-      <div className={`main-layout`}>
+      <div className={'main-layout'}>
         <style jsx global>{`
           body {
             background: url('/static/images/body-bg.png') top left repeat;

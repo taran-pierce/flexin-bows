@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 
-const WorkoutList = (props) => {
+const WorkoutList = ( props ) => {
   return (
-    <div className={`list-container`}>
+    <div className={'list-container'}>
       <style jsx>{`
         .list-container {
           text-align: center;
@@ -48,7 +49,7 @@ const WorkoutList = (props) => {
         }
       `}</style>
       <ul>
-        {props.links.map( (link) => (
+        {props.links.map( ( link ) => (
           <li key={link.name}>
             <Link href={link.href}>
               <a>{link.name}</a>
@@ -58,6 +59,10 @@ const WorkoutList = (props) => {
       </ul>
     </div>
   )
+}
+
+WorkoutList.propTypes = {
+  links: PropTypes.any.isRequired,
 }
 
 export default WorkoutList

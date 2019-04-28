@@ -1,6 +1,7 @@
-import Layout from "../components/Layout";
+import React from 'react'
+import Layout from '../components/Layout'
 
-const Page = (props) => {
+const Page = () => {
   return (
     <div>
       <Layout />

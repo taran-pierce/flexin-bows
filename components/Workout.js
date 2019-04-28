@@ -1,5 +1,6 @@
 import WorkoutTable from './WorkoutTable'
 import ImageCard from './ImageCard'
+import PropTypes from 'prop-types'
 
 const Workout = ( props ) => {
   const data = props.data
@@ -112,18 +113,18 @@ const Workout = ( props ) => {
           box-shadow: none;
         }
       `}</style>
-        <h1>{data.title} 
-          <small id={`toggle-desc`} className={`close`} onClick={props.toggleDesc}>{toggleIcon}</small>
-          <small id={`toggle-size`} className={`close`} onClick={props.onSizeChange}>{sizeIcon}</small>
-          <small id={`toggle-table-size`} className={`close`} onClick={props.onTableSizeChange}>{tableIcon}</small>
-        </h1>
-        <div className={`workout-content`}>
-          <p><strong>Frequency: </strong>{data.frequency}</p>
-          <p><strong>Time: </strong>{data.time}</p>
-          <p>{data.content}</p>
-        </div>
+      <h1>{data.title} 
+        <small id={'toggle-desc'} className={'close'} onClick={props.toggleDesc}>{toggleIcon}</small>
+        <small id={'toggle-size'} className={'close'} onClick={props.onSizeChange}>{sizeIcon}</small>
+        <small id={'toggle-table-size'} className={'close'} onClick={props.onTableSizeChange}>{tableIcon}</small>
+      </h1>
+      <div className={'workout-content'}>
+        <p><strong>Frequency: </strong>{data.frequency}</p>
+        <p><strong>Time: </strong>{data.time}</p>
+        <p>{data.content}</p>
+      </div>
       <div className={`flex ${props.imageSize === 'large' ? 'large-image' : 'small-image'}`}>
-        <div className={`flex-item table`}>
+        <div className={'flex-item table'}>
           <WorkoutTable
             plans={plans}
             activeTab={props.activeTab}
@@ -132,12 +133,26 @@ const Workout = ( props ) => {
             tableSize={props.tableSize}
           />
         </div>
-        <div className={`flex-item image`}>
+        <div className={'flex-item image'}>
           <ImageCard image={props.image} />
         </div>
       </div>
     </section>
   )
+}
+
+Workout.propTypes = {
+  data: PropTypes.any.isRequired,
+  activeTab: PropTypes.any.isRequired,
+  showDesc: PropTypes.any.isRequired,
+  imageSize: PropTypes.any.isRequired,
+  tableSize: PropTypes.any.isRequired,
+  toggleDesc: PropTypes.any.isRequired,
+  onSizeChange: PropTypes.any.isRequired,
+  onTableSizeChange: PropTypes.any.isRequired,
+  onBodyPartClick: PropTypes.any.isRequired,
+  onWorkoutClick: PropTypes.any.isRequired,
+  image: PropTypes.any.isRequired,
 }
 
 export default Workout
