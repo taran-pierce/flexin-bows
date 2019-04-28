@@ -7,71 +7,26 @@ const Workout = ( props ) => {
   const data = props.data
   const plans = props.data.workout
 
-  let toggleIcon = '(Show Description)'
-
-  if ( props.showDesc ) {
-    toggleIcon = '(Hide Description)'
-  }
-
-  let sizeIcon = '(Smaller Image)'
-
-  if ( props.imageSize === 'small' ) {
-    sizeIcon = '(Larger Image)'
-  }
-
-  let tableIcon = '(Smaller Table)'
-
-  if ( props.tableSize === 'small' ) {
-    tableIcon = '(Larger Table)'
-  }
-  
   return (
     <section className={`workout ${props.showDesc ? 'active' : ''}`}>
       <style jsx>{`
         h1 {
           background-color: #7c6f5e;
-          box-shadow: 0 1px 2px rgba(0,0,0,.4);
           margin: 0;
           color: #dfd2c8;
           text-shadow: -1px -1px rgba(0,0,0,.3);
           padding: .5rem;
         }
 
+        .flex-item.image {
+          text-align: center;
+        }
+        .flex-item.table {
+          margin-bottom: 1rem;
+        }
+
         .workout {
           padding: 1rem;
-        }
-        
-        .flex {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-        }
-        
-        .flex-item {
-          flex-grow: 1;
-          transition: width .5s ease-in-out;
-        }
-
-        .flex-item.table {
-          width: 60%;
-        }
-
-        .flex-item.image {
-          width: 40%;
-        }
-
-        .flex.large-image .flex-item.image {
-          width: 56%;
-        }
-        .flex.large-image .flex-item.table {
-          width: 44%;
-        }
-
-        .flex.small-image .flex-item.image {
-          width: 40%;
-        }
-        .flex.small-image .flex-item.table {
-          width: 60%;
         }
 
         .workout .workout-content {
@@ -100,22 +55,59 @@ const Workout = ( props ) => {
         .workout.active h1 {
           box-shadow: none;
         }
+
+        @media( min-width: 992px ) {
+
+          .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+          }
+        
+          .flex-item {
+            flex-grow: 1;
+            transition: width .5s ease-in-out;
+          }
+
+          .flex-item.table {
+            width: 0;
+            margin-right: 1rem;
+          }
+          .flex-item.table.active {
+            width: 60%;
+          }
+
+          .flex-item.image {
+            width: 100%;
+          }
+                
+          .flex.large-image .flex-item.table.active + .flex.large-image .flex-item.image {
+            width: 56%;
+          }
+          .flex.large-image .flex-item.table.active {
+            width: 44%;
+          }
+
+          .flex.large-image .flex-item.table.active + .flex.small-image .flex-item.image {
+            width: 40%;
+          }
+          .flex.small-image .flex-item.table.active {
+            width: 60%;
+          }
+        }
       `}</style>
       <h1>{data.title}
         <Icon 
           name='angle-double-down'
           size='1x'
           clickEvent={props.toggleDesc}
+          active={props.showDesc}
         />
         <Icon 
-          name='braille'
+          name='table'
           size='1x'
           clickEvent={props.onTableSizeChange}
-        />
-        <Icon 
-          name='tablet'
-          size='1x'
-          clickEvent={props.onSizeChange}
+          active={props.tableSize === 'large' ? 1 : 0}
         />
       </h1>
       <div className={'workout-content'}>
@@ -124,7 +116,7 @@ const Workout = ( props ) => {
         <p>{data.content}</p>
       </div>
       <div className={`flex ${props.imageSize === 'large' ? 'large-image' : 'small-image'}`}>
-        <div className={'flex-item table'}>
+        <div className={ `flex-item table ${props.tableSize === 'large' ? 'active' :''}`}>
           <WorkoutTable
             plans={plans}
             activeTab={props.activeTab}
