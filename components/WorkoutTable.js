@@ -1,9 +1,23 @@
 import WorkoutTableHeader from './WorkoutTableHeader'
 import PropTypes from 'prop-types'
 
+const hiddenWorkoutTableStyles = {
+  opacity: 0,
+  visibility: 'hidden',
+  transition: 'all .5s ease-in-out',
+  height: '0',
+}
+
+const visibleWorkoutTableStyles = {
+  opacity: 1,
+  visibility: 'visible',
+  transition: 'all .5s ease-in-out',
+  height: 'auto'
+}
+
 const WorkoutTable = ( props ) => {
   return (
-    <div className={'workout-table'}>
+    <div className={'workout-table'} style={props.tableSize === 'large' ? visibleWorkoutTableStyles : hiddenWorkoutTableStyles}>
       <WorkoutTableHeader
         plans={props.plans}
         onWorkoutClick={props.onWorkoutClick}
@@ -19,13 +33,6 @@ const WorkoutTable = ( props ) => {
            padding: .2rem 1rem;
            border-right: 1px solid black;
            border-bottom: 1px solid black;
-         }
-         
-         .small-layout td:last-child,
-         .small-layout th:last-child,
-         .small-layout th:nth-child(3),
-         .small-layout td:nth-child(3) {
-           display: none;
          }
          
          th {
@@ -55,8 +62,7 @@ const WorkoutTable = ( props ) => {
          }
       `}</style>
       {props.plans.days.map( ( day ) => (
-        <div key={day.id}
-          className={props.tableSize === 'small' ? 'small-layout' : ''}>
+        <div key={day.id}>
           <table className={day.id !== props.activeTab ? 'hidden' : 'active' }>
             <thead>
               <tr>
