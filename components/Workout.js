@@ -1,7 +1,7 @@
 import WorkoutTable from './WorkoutTable'
 import ImageCard from './ImageCard'
 import PropTypes from 'prop-types'
-import FontAwesome from 'react-fontawesome'
+import Icon from './Icon'
 
 const Workout = ( props ) => {
   const data = props.data
@@ -35,10 +35,6 @@ const Workout = ( props ) => {
           color: #dfd2c8;
           text-shadow: -1px -1px rgba(0,0,0,.3);
           padding: .5rem;
-        }
-        
-        .close {
-          float: right;
         }
 
         .workout {
@@ -94,15 +90,6 @@ const Workout = ( props ) => {
           visibility: hidden;
         }
 
-        small {
-          font-size: 60%;
-          padding-top: .5rem;
-        }
-
-        small + small {
-          margin-right: .5rem;
-        }
-
         .workout.active .workout-content {
           opacity: 1;
           padding: 1rem;
@@ -115,27 +102,21 @@ const Workout = ( props ) => {
         }
       `}</style>
       <h1>{data.title}
-        <span className='close' onClick={props.toggleDesc}>
-          <FontAwesome
-            name='angle-double-down'
-            size='1x'
-            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-          />
-        </span>
-        <span className='close' onClick={props.onTableSizeChange}>
-          <FontAwesome
-            name='braille'
-            size='1x'
-            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-          />
-        </span>  
-        <span className='close' onClick={props.onSizeChange}>
-          <FontAwesome
-            name='tablet'
-            size='1x'
-            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-          />
-        </span> 
+        <Icon 
+          name='angle-double-down'
+          size='1x'
+          clickEvent={props.toggleDesc}
+        />
+        <Icon 
+          name='braille'
+          size='1x'
+          clickEvent={props.onTableSizeChange}
+        />
+        <Icon 
+          name='tablet'
+          size='1x'
+          clickEvent={props.onSizeChange}
+        />
       </h1>
       <div className={'workout-content'}>
         <p><strong>Frequency: </strong>{data.frequency}</p>
