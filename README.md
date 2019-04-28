@@ -1,12 +1,17 @@
-# flexin-bows `3.4.3`
+# flexin-bows `3.4.4`
 The booklet sucks, look through this instead to get your work out on.
 
 ## Features
 * All workout routines for the BowFlex with an image for demonstration
 * Created build and deployment pipeline in Azure
+* Basic unit testing with Jest
+* Toggle hiding working description
+* Toggle for larger or small image
+* Added ESLint
 
 ### Future updates
 * Better styling for errrythang
+* Better styling for small-table layout
 
 ### Setup
 * `git clone https://github.com/taran-pierce/flexin-bows.git`

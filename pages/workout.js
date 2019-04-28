@@ -1,9 +1,10 @@
 import React from 'react'
-import Layout from "../components/Layout"
+import PropTypes from 'prop-types'
+import Layout from '../components/Layout'
 
 class Page extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor( props ) {
+    super( props )
 
     // grab ID from first day workout
     const activeTab = props.data.workout.days[0].id
@@ -27,7 +28,7 @@ class Page extends React.Component {
     this.onTableSizeChange = this.onTableSizeChange.bind(this)
   }
   
-  toggleDesc( event ) {
+  toggleDesc() {
     if ( this.state.showDesc ) {
       this.setState({ showDesc: 0 })
     } else {
@@ -97,6 +98,10 @@ Page.getInitialProps = async function( res ) {
   return {
     data: data
   }
+}
+
+Page.propTypes = {
+  data: PropTypes.any.isRequired
 }
 
 export default Page

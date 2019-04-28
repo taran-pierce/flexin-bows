@@ -1,4 +1,6 @@
-const WorkoutTableHeader = (props) => {
+import PropTypes from 'prop-types'
+
+const WorkoutTableHeader = ( props ) => {
   return (
     <div>
       <style jsx>{`
@@ -27,16 +29,21 @@ const WorkoutTableHeader = (props) => {
         }
       `}</style>
       <ul>
-        {props.plans.days.map( (day) => (
+        {props.plans.days.map( ( day ) => (
           <li key={day.title}>
             <a onClick={props.onWorkoutClick}
-               href={`#`}
-               data-id={day.id}>{day.title}</a>
+              href={'#'}
+              data-id={day.id}>{day.title}</a>
           </li>
         ))}
       </ul>
     </div>
   )
+}
+
+WorkoutTableHeader.propTypes = {
+  plans: PropTypes.any.isRequired,
+  onWorkoutClick: PropTypes.any.isRequired,
 }
 
 export default WorkoutTableHeader

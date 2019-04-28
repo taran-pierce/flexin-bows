@@ -1,8 +1,9 @@
 import WorkoutTableHeader from './WorkoutTableHeader'
+import PropTypes from 'prop-types'
 
-const WorkoutTable = (props) => {
+const WorkoutTable = ( props ) => {
   return (
-    <div className={`workout-table`}>
+    <div className={'workout-table'}>
       <WorkoutTableHeader
         plans={props.plans}
         onWorkoutClick={props.onWorkoutClick}
@@ -53,9 +54,9 @@ const WorkoutTable = (props) => {
            display: none;
          }
       `}</style>
-      {props.plans.days.map( (day) => (
+      {props.plans.days.map( ( day ) => (
         <div key={day.id}
-             className={props.tableSize === 'small' ? 'small-layout' : ''}>
+          className={props.tableSize === 'small' ? 'small-layout' : ''}>
           <table className={day.id !== props.activeTab ? 'hidden' : 'active' }>
             <thead>
               <tr>
@@ -66,14 +67,14 @@ const WorkoutTable = (props) => {
               </tr>
             </thead>
             <tbody>
-              {day.bodyParts.map( (part) => (
+              {day.bodyParts.map( ( part ) => (
                 <tr key={part.name}>
                   <td>{part.name}</td>
                   <td>
-                    {part.exercises.map( (workout) => (
+                    {part.exercises.map( ( workout ) => (
                       <p key={workout.name}>
                         <a
-                          href={`#`}
+                          href={'#'}
                           onClick={props.onBodyPartClick}
                           data-file={workout.fileName}>{workout.name}</a>
                       </p>
@@ -89,6 +90,14 @@ const WorkoutTable = (props) => {
       ))}
     </div>
   )
+}
+
+WorkoutTable.propTypes = {
+  plans: PropTypes.any.isRequired,
+  activeTab: PropTypes.any.isRequired,
+  onWorkoutClick: PropTypes.any.isRequired,
+  onBodyPartClick: PropTypes.any.isRequired,
+  tableSize: PropTypes.any.isRequired,
 }
 
 export default WorkoutTable
