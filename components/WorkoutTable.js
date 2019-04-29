@@ -21,6 +21,7 @@ const WorkoutTable = ( props ) => {
       <WorkoutTableHeader
         plans={props.plans}
         onWorkoutClick={props.onWorkoutClick}
+        activeTab={props.activeTab}
       />
       <style jsx>{`
          table {

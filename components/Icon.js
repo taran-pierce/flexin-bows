@@ -17,7 +17,6 @@ const Icon = ( props ) => {
       `}</style>
       <FontAwesome
         name={props.name}
-        size={props.size}
         style={{ 
           textShadow: props.active ? '0 1px 0 rgba(0, 0, 0, 0.5)' : '0 1px 0 rgba(0, 0, 0, 0.1)',
           color: props.active ? '#dfd2c8' : '#666',
@@ -32,7 +31,6 @@ const Icon = ( props ) => {
 Icon.propTypes = {
   name: PropTypes.any.isRequired,
   clickEvent: PropTypes.any.isRequired,
-  size: PropTypes.any.isRequired,
   active: PropTypes.any.isRequired,
 }
 
