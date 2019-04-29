@@ -23,3 +23,6 @@ steps:
     npm run export
   displayName: 'npm install then build and export'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    ArtifactName: 'flexin-bows-build'
