@@ -99,13 +99,11 @@ const Workout = ( props ) => {
       <h1>{data.title}
         <Icon 
           name='angle-double-down'
-          size='1x'
           clickEvent={props.toggleDesc}
           active={props.showDesc}
         />
         <Icon 
           name='table'
-          size='1x'
           clickEvent={props.onTableSizeChange}
           active={props.tableSize === 'large' ? 1 : 0}
         />
