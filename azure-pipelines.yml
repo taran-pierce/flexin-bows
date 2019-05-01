@@ -14,11 +14,14 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- task: CmdLine@2
+- task: Npm@1
   inputs:
-    script: 'echo npm install && npm test
-      
-      echo Use the environment variables input below to pass secret variables to this script'
+    command: 'install'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'npm test'
 
 - script: |
     npm run build
