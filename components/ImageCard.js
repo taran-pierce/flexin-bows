@@ -15,7 +15,7 @@ const ImageCard = (props) => {
 }
 
 ImageCard.propTypes = {
-  image: PropTypes.any.isRequired
+  image: PropTypes.string
 }
 
 export default ImageCard

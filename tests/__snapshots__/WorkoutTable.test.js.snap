@@ -2,19 +2,32 @@
 
 exports[`Does WorkoutTable render correctly? 1`] = `
 <div
-  className="jsx-1390947089 workout-table"
+  className="jsx-2306742958 workout-table"
+  style={
+    Object {
+      "height": "0",
+      "opacity": 0,
+      "transition": "all .5s ease-in-out",
+      "visibility": "hidden",
+    }
+  }
 >
   <div
-    className="jsx-92330898"
+    className="jsx-1110752472"
   >
     <ul
-      className="jsx-92330898"
+      className="jsx-1110752472"
     >
       <li
-        className="jsx-92330898"
+        className="jsx-1110752472"
+        style={
+          Object {
+            "background": "rgba(255,255,255,.5)",
+          }
+        }
       >
         <a
-          className="jsx-92330898"
+          className="jsx-1110752472"
           data-id="better-body-M-W-F"
           href="#"
         >
@@ -24,58 +37,58 @@ exports[`Does WorkoutTable render correctly? 1`] = `
     </ul>
   </div>
   <div
-    className="jsx-1390947089 "
+    className="jsx-2306742958"
   >
     <table
-      className="jsx-1390947089 hidden"
+      className="jsx-2306742958 hidden"
     >
       <thead
-        className="jsx-1390947089"
+        className="jsx-2306742958"
       >
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <th
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Body Part
           </th>
           <th
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Exercise
           </th>
           <th
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Sets
           </th>
           <th
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Reps
           </th>
         </tr>
       </thead>
       <tbody
-        className="jsx-1390947089"
+        className="jsx-2306742958"
       >
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Chest
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="bench-press-horizontal"
                 href="#"
               >
@@ -84,32 +97,32 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>
         </tr>
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Back
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="shoulder-extension"
                 href="#"
               >
@@ -118,32 +131,32 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>
         </tr>
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Shoulders
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="cross-over-rear-deltiod"
                 href="#"
               >
@@ -152,32 +165,32 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>
         </tr>
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Arms
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="bicep-curl"
                 href="#"
               >
@@ -185,10 +198,10 @@ exports[`Does WorkoutTable render correctly? 1`] = `
               </a>
             </p>
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="triceps-pushdown"
                 href="#"
               >
@@ -197,32 +210,32 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>
         </tr>
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Legs
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="calf-raise"
                 href="#"
               >
@@ -230,10 +243,10 @@ exports[`Does WorkoutTable render correctly? 1`] = `
               </a>
             </p>
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="leg-press"
                 href="#"
               >
@@ -242,32 +255,32 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>
         </tr>
         <tr
-          className="jsx-1390947089"
+          className="jsx-2306742958"
         >
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             Trunk
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="trunk-rotation"
                 href="#"
               >
@@ -275,10 +288,10 @@ exports[`Does WorkoutTable render correctly? 1`] = `
               </a>
             </p>
             <p
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <a
-                className="jsx-1390947089"
+                className="jsx-2306742958"
                 data-file="abdominal-crunch"
                 href="#"
               >
@@ -287,12 +300,12 @@ exports[`Does WorkoutTable render correctly? 1`] = `
             </p>
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             1 - 2
           </td>
           <td
-            className="jsx-1390947089"
+            className="jsx-2306742958"
           >
             10 - 15
           </td>

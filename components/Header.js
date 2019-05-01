@@ -58,7 +58,7 @@ const Header = ( props ) => {
 }
 
 Header.propTypes = {
-  title: PropTypes.any.isRequired
+  title: PropTypes.string
 }
 
 export default Header

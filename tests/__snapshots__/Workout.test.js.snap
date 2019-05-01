@@ -2,80 +2,115 @@
 
 exports[`Does Workout render correctly? 1`] = `
 <section
-  className="jsx-2018535588 workout "
+  className="jsx-748357250 workout "
 >
   <h1
-    className="jsx-2018535588"
+    className="jsx-748357250"
   >
     20 Minute Better Body Workout
-    <small
-      className="jsx-2018535588 close"
-      id="toggle-desc"
+    <span
+      className="jsx-1190048806 close"
+      style={
+        Object {
+          "float": "right",
+        }
+      }
     >
-      (Show Description)
-    </small>
-    <small
-      className="jsx-2018535588 close"
-      id="toggle-size"
+      <i
+        aria-hidden={true}
+        className="fa fa-angle-double-down"
+        style={
+          Object {
+            "color": "#666",
+            "textShadow": "0 1px 0 rgba(0, 0, 0, 0.1)",
+            "transition": "all .5s ease-in-out",
+          }
+        }
+      />
+    </span>
+    <span
+      className="jsx-1190048806 close"
+      style={
+        Object {
+          "float": "right",
+        }
+      }
     >
-      (Smaller Image)
-    </small>
-    <small
-      className="jsx-2018535588 close"
-      id="toggle-table-size"
-    >
-      (Smaller Table)
-    </small>
+      <i
+        aria-hidden={true}
+        className="fa fa-table"
+        style={
+          Object {
+            "color": "#666",
+            "textShadow": "0 1px 0 rgba(0, 0, 0, 0.1)",
+            "transition": "all .5s ease-in-out",
+          }
+        }
+      />
+    </span>
   </h1>
   <div
-    className="jsx-2018535588 workout-content"
+    className="jsx-748357250 workout-content"
   >
     <p
-      className="jsx-2018535588"
+      className="jsx-748357250"
     >
       <strong
-        className="jsx-2018535588"
+        className="jsx-748357250"
       >
         Frequency: 
       </strong>
       3 Days per week (M-W-F)
     </p>
     <p
-      className="jsx-2018535588"
+      className="jsx-748357250"
     >
       <strong
-        className="jsx-2018535588"
+        className="jsx-748357250"
       >
         Time: 
       </strong>
       20 Minutes
     </p>
     <p
-      className="jsx-2018535588"
+      className="jsx-748357250"
     >
       Start by performing one set of each exercise. Warm up with a light resistance that you can perform easily for 5/10 reps without fatigue. Focus on practicing and learning your technique before increasing the resistance. Then move to a more challenging resistance that you can perform no less than 10 reps and no more than 15 reps. As you become stronger, you can advance to two sets for each exercise. Complete all sets of each exercise before moving ont to the next one. Res 30 to 45 seconds between sets. Move slowly on each repo. Use a pace that would allow you to stop the movement instantly at any point in the repo. Count three seconds up and threes seconds down and work to fatigue during each set.
     </p>
   </div>
   <div
-    className="jsx-2018535588 flex small-image"
+    className="jsx-748357250 flex small-image"
   >
     <div
-      className="jsx-2018535588 flex-item table"
+      className="jsx-748357250 flex-item table "
     >
       <div
-        className="jsx-1390947089 workout-table"
+        className="jsx-2306742958 workout-table"
+        style={
+          Object {
+            "height": "0",
+            "opacity": 0,
+            "transition": "all .5s ease-in-out",
+            "visibility": "hidden",
+          }
+        }
       >
         <div
-          className="jsx-92330898"
+          className="jsx-1110752472"
         >
           <ul
-            className="jsx-92330898"
+            className="jsx-1110752472"
           >
             <li
-              className="jsx-92330898"
+              className="jsx-1110752472"
+              style={
+                Object {
+                  "background": "rgba(255,255,255,.5)",
+                }
+              }
             >
               <a
-                className="jsx-92330898"
+                className="jsx-1110752472"
                 data-id="better-body-M-W-F"
                 href="#"
               >
@@ -85,58 +120,58 @@ exports[`Does Workout render correctly? 1`] = `
           </ul>
         </div>
         <div
-          className="jsx-1390947089 "
+          className="jsx-2306742958"
         >
           <table
-            className="jsx-1390947089 hidden"
+            className="jsx-2306742958 hidden"
           >
             <thead
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <th
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Body Part
                 </th>
                 <th
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Exercise
                 </th>
                 <th
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Sets
                 </th>
                 <th
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Reps
                 </th>
               </tr>
             </thead>
             <tbody
-              className="jsx-1390947089"
+              className="jsx-2306742958"
             >
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Chest
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="bench-press-horizontal"
                       href="#"
                     >
@@ -145,32 +180,32 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
               </tr>
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Back
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="shoulder-extension"
                       href="#"
                     >
@@ -179,32 +214,32 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
               </tr>
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Shoulders
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="cross-over-rear-deltiod"
                       href="#"
                     >
@@ -213,32 +248,32 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
               </tr>
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Arms
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="bicep-curl"
                       href="#"
                     >
@@ -246,10 +281,10 @@ exports[`Does Workout render correctly? 1`] = `
                     </a>
                   </p>
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="triceps-pushdown"
                       href="#"
                     >
@@ -258,32 +293,32 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
               </tr>
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Legs
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="calf-raise"
                       href="#"
                     >
@@ -291,10 +326,10 @@ exports[`Does Workout render correctly? 1`] = `
                     </a>
                   </p>
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="leg-press"
                       href="#"
                     >
@@ -303,32 +338,32 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
               </tr>
               <tr
-                className="jsx-1390947089"
+                className="jsx-2306742958"
               >
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   Trunk
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="trunk-rotation"
                       href="#"
                     >
@@ -336,10 +371,10 @@ exports[`Does Workout render correctly? 1`] = `
                     </a>
                   </p>
                   <p
-                    className="jsx-1390947089"
+                    className="jsx-2306742958"
                   >
                     <a
-                      className="jsx-1390947089"
+                      className="jsx-2306742958"
                       data-file="abdominal-crunch"
                       href="#"
                     >
@@ -348,12 +383,12 @@ exports[`Does Workout render correctly? 1`] = `
                   </p>
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   1 - 2
                 </td>
                 <td
-                  className="jsx-1390947089"
+                  className="jsx-2306742958"
                 >
                   10 - 15
                 </td>
@@ -364,7 +399,7 @@ exports[`Does Workout render correctly? 1`] = `
       </div>
     </div>
     <div
-      className="jsx-2018535588 flex-item image"
+      className="jsx-748357250 flex-item image"
     >
       <div
         className="jsx-776312227"

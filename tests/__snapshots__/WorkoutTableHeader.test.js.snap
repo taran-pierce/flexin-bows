@@ -2,16 +2,21 @@
 
 exports[`Does WorkoutTable render correctly? 1`] = `
 <div
-  className="jsx-92330898"
+  className="jsx-1110752472"
 >
   <ul
-    className="jsx-92330898"
+    className="jsx-1110752472"
   >
     <li
-      className="jsx-92330898"
+      className="jsx-1110752472"
+      style={
+        Object {
+          "background": "rgba(255,255,255,.5)",
+        }
+      }
     >
       <a
-        className="jsx-92330898"
+        className="jsx-1110752472"
         data-id="better-body-M-W-F"
         href="#"
       >

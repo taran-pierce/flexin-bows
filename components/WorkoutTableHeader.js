@@ -57,8 +57,8 @@ const WorkoutTableHeader = ( props ) => {
 
 WorkoutTableHeader.propTypes = {
   plans: PropTypes.any.isRequired,
-  onWorkoutClick: PropTypes.any.isRequired,
-  activeTab: PropTypes.any.isRequired,
+  onWorkoutClick: PropTypes.func,
+  activeTab: PropTypes.string,
 }
 
 export default WorkoutTableHeader

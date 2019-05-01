@@ -101,10 +101,10 @@ const WorkoutTable = ( props ) => {
 
 WorkoutTable.propTypes = {
   plans: PropTypes.any.isRequired,
-  activeTab: PropTypes.any.isRequired,
-  onWorkoutClick: PropTypes.any.isRequired,
-  onBodyPartClick: PropTypes.any.isRequired,
-  tableSize: PropTypes.any.isRequired,
+  activeTab: PropTypes.string,
+  onWorkoutClick: PropTypes.func,
+  onBodyPartClick: PropTypes.func,
+  tableSize: PropTypes.string,
 }
 
 export default WorkoutTable

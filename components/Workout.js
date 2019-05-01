@@ -133,16 +133,16 @@ const Workout = ( props ) => {
 
 Workout.propTypes = {
   data: PropTypes.any.isRequired,
-  activeTab: PropTypes.any.isRequired,
-  showDesc: PropTypes.any.isRequired,
-  imageSize: PropTypes.any.isRequired,
-  tableSize: PropTypes.any.isRequired,
-  toggleDesc: PropTypes.any.isRequired,
-  onSizeChange: PropTypes.any.isRequired,
-  onTableSizeChange: PropTypes.any.isRequired,
-  onBodyPartClick: PropTypes.any.isRequired,
-  onWorkoutClick: PropTypes.any.isRequired,
-  image: PropTypes.any.isRequired,
+  activeTab: PropTypes.string,
+  showDesc: PropTypes.number,
+  imageSize: PropTypes.string,
+  tableSize: PropTypes.string,
+  toggleDesc: PropTypes.number,
+  onSizeChange: PropTypes.func,
+  onTableSizeChange: PropTypes.func,
+  onBodyPartClick: PropTypes.func,
+  onWorkoutClick: PropTypes.func,
+  image: PropTypes.string,
 }
 
 export default Workout

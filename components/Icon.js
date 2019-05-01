@@ -30,8 +30,8 @@ const Icon = ( props ) => {
 
 Icon.propTypes = {
   name: PropTypes.any.isRequired,
-  clickEvent: PropTypes.any.isRequired,
-  active: PropTypes.any.isRequired,
+  clickEvent: PropTypes.func,
+  active: PropTypes.any,
 }
 
 export default Icon
